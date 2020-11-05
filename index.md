@@ -15,9 +15,8 @@ The objective of this page is to provide keys for motor Rapid Control Prototypin
 
  ### ctrl+elec
 
-<img src="https://github.com/rdelpoux/rdelpoux.github.io/img/logo.png" width="300">
+<img src="https://rdelpoux.github.io/img/logo.png" width="300">
 
-![ctrl+elec](D:\Documents\Microcontrolleur\rdelpoux.github.io\img\logo.png)
 
 The platform [ctrl+elec](http://www.ctrl-elec.fr/en/ctrl-elec/) is positioned between the disciplines of power  electronics on the one hand, and control theory on the other hand: The  objective is to take advantage of a fine knowledge of power electronics  systems and of an expertise on some control theory tools, identified as  relevant for these applications. This platform is related to the  research work of the group [Automatique pour l’Electronique de puissance](http://www.ampere-lab.fr/spip.php?article921) of [Ampere UMR CNRS 5005](http://www.ampere-lab.fr/)
 
