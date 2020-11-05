@@ -18,3 +18,10 @@
 - [MPLAB device blocks for Simulink](https://www.microchip.com/SimulinkBlocks)
 - [MPLAB X IDE](https://www.microchip.com/MPLABX) development (required to flash the binary from matlab)
 - [XC16](https://www.microchip.com/XC16) compiler
+
+## Motor connection
+
+<img src="https://rdelpoux.github.io/img/MotorConnection.png" width="300">
+
+
+
