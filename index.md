@@ -32,7 +32,7 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://github
 
 ## Content
 
-- [Getting Started](https://rdelpoux.github.io/GettingStarted/GettingStarted.md)
+- [Getting Started](/GettingStarted/GettingStarted.md)
 
 
 
