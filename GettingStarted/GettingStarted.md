@@ -21,7 +21,7 @@
 
 ## Motor connection
 
-<img src="https://rdelpoux.github.io/img/MotorConnection.PNG" width="300">
+<img src="https://rdelpoux.github.io/img/MotorConnection.PNG">
 
 
 
