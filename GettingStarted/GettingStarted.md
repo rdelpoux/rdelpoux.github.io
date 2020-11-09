@@ -3,7 +3,7 @@
 #### Hardware requirements:
 
 - [MCLV-V2](https://www.microchip.com/dsPICDEMMCLV-2DevelopmentBoard866) Motor Control Board
-- [PIM dsPIC33EP256MC506](https://www.microchip.com/DevelopmentTools/ProductDetails/ma330031) with internal Op-Amp
+- [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) with external Op-Amp
 - Programmer ([PICkit 4](https://www.microchip.com/pickit4), [ICD4](https://www.microchip.com/icd4), [Real-Ice](https://www.microchip.com/realice), [PICkit 3](https://www.microchip.com/pickit3), [ICD3](https://www.microchip.com/icd3), ...)
 - PMSM motor ([N23 Industrial Grade Motors](https://rdelpoux.github.io/Datasheets/N23_Industrial_Grade_Motors_v6.0.pdf))
 - Cable to send data from the MCLV board (Tx) to the PC (Rx) (like a [FTDI cable](https://www.ftdichip.com/Products/Cables/USBTTLSerial.htm))
@@ -22,6 +22,44 @@
 ## Motor connection
 
 <img src="https://rdelpoux.github.io/img/MotorConnection.PNG">
+
+## Hardware configuration
+
+### Pinout of the [MCLV-V2](https://www.microchip.com/dsPICDEMMCLV-2DevelopmentBoard866)  with the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) with external Op-AMP
+
+The pinout of the MCLV-2 board with the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) with external Op-AMP configuration is described in its [Information Sheet](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207).
+
+The table below provide important pinout informations.
+
+| MCLV-2 Board  | ATSAME54  |
+| :-----------: | :-------: |
+|     LED1      |    B27    |
+|     LED2      |    B26    |
+|               |           |
+|    BTN S2     |    D9     |
+|    BTN S3     |    D10    |
+|               |           |
+|   UART\_Rx    |    A13    |
+|   UART\_Tx    |    A12    |
+|               |           |
+| PWM1 \(L/H\)  | A16 - A8  |
+| PWM2 \(L/H\)  | A17 - A9  |
+| PWM3 \(L/H\)  | A18 - A10 |
+|   MC\_FAULT   |    xxx    |
+|               |           |
+|  HALLA / QEA  |    C16    |
+|  HALLB / QEB  |    C17    |
+| HALLC / INDX  |    C18    |
+|     HOME      |   RC10    |
+|               |           |
+|      Pot      |    xxx    |
+|     VBUS      |    xxx    |
+|      Ia       |    xxx    |
+|      Ib       |    xxx    |
+|  Ibus / Vbus  |    xxx    |
+|               |           |
+| PGC \(debug\) |    xxx    |
+| PGD \(debug\) |    xxx    |
 
 
 
