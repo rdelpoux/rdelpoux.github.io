@@ -2,9 +2,10 @@
 
 ## Table of content
 
-1. [Example](#example)
+1. [Requirements](#Requirements)
+2. [Motor specifications](#Motor specifications)
 
-## Requirement
+## Requirements
 
 #### Hardware requirements:
 
@@ -23,11 +24,11 @@
 - [MPLAB X IDE](https://www.microchip.com/MPLABX) development (required to flash the binary from matlab)
 - [XC16](https://www.microchip.com/XC16) compiler
 
-## Motor details 
+## Motor specifications
 
 The proposed motor for this experimentation is a Permanent Magnet Synchronous Motor (PMSM) The  ([N23 Industrial Grade Motors](https://rdelpoux.github.io/Datasheets/N23_Industrial_Grade_Motors_v6.0.pdf))
 
-## Example
+## 
 
 
 
