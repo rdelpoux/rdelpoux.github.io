@@ -13,6 +13,18 @@
 
 This website provide keys for motor Rapid Control Prototyping. Originally intended to 5th year students in the [electrical engineering department](http://ge.insa-lyon.fr/) of [INSA Lyon](http://www.insa-lyon.fr/) for the [CCSA](http://ge-option5a.insa-lyon.fr/content/ccsa-commande-de-convertisseurs-et-de-systemes-dactionnement) option, the objective of these pages is to propose an initiation to the programming environment toolbox [MPLAB Device Blocks for Simulink](https://www.microchip.com/DevelopmentTools/ProductDetails/sw007023#utm_source=MicroSolutions&utm_medium=Link&utm_term=FY16Q4&utm_content=DevTools&utm_campaign=Article). [MPLAB Device Blocks for Simulink](https://www.microchip.com/DevelopmentTools/ProductDetails/sw007023#utm_source=MicroSolutions&utm_medium=Link&utm_term=FY16Q4&utm_content=DevTools&utm_campaign=Article) allows the use of Matlab Simulink to directly target Microchip Microcontroller. 
 
+Developing embedded code for microcontrollers requires skills that are out of scope of the curriculum of control system engineers which is typically limited to high level tools like Matlab/Simulink and Rapid Control Prototyping tools like dSPACE or Speedgoat. This task is often left to embedded system engineers who are specialists of hardware architecture but have little knowledge in control theory. It is clear that there is a lack of engineers able to deal with the full process from control design to hardware implementation. 
+
+This observation is also confirmed by the increasing desire of students in control system courses to learn how to implement algorithms directly on dedicated hardware. Based on this assessment, it has been decided to propose a simple and fast methodology for RCP based on the interface of a microcontroller directly with Matlab/Simulink by taking advantage of the graphical interface provided by the Microchip Technology MPLAB device blocks for Simulink. 
+
+The objective is not to hide and make totally transparent the code generation but on the contrary to make it accessible in order to tackle the problems that arise from this implementation. In addition to the teaching benefit, the second objective is to fill the gap between convenient but expensive RCP platforms and complex but cheaper microcontroller tools. The developed methodology will speed up the implementation of advanced control algorithms on real hardware by removing the phase of coding on the target :
+
+<img src="https://rdelpoux.github.io/img/RCP/design_process.png" width="500">
+
+
+
+This word is realized in collaboration between [ctrl+elec](http://www.ctrl-elec.fr/en/ctrl-elec/) and Microchip engineers developing [MPLAB Device Blocks for Simulink](https://github.com/LubinKerhuel/MPLAB-Device-Blocks-for-Simulink.git)
+
 ### ctrl + elec
 
 <img src="https://rdelpoux.github.io/img/logo.png" width="300">
