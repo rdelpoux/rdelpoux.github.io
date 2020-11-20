@@ -28,6 +28,19 @@
 
 The proposed motor for this experimentation is a Permanent Magnet Synchronous Motor (PMSM) The  ([N23 Industrial Grade Motors](https://rdelpoux.github.io/Datasheets/N23_Industrial_Grade_Motors_v6.0.pdf))
 
+The motor parameters are :
+
+| Parameter         | Value          |
+| ----------------- | -------------- |
+| Pole pairs number | p=4            |
+| Stator resistance | R=0.5 $\Omega$ |
+|                   |                |
+|                   |                |
+|                   |                |
+|                   |                |
+
+
+
 ## 
 
 
