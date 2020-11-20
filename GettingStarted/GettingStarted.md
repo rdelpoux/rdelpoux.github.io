@@ -6,6 +6,7 @@
 
 1. [Requirements](#requirements)
 2. [Motor specifications](#motor)
+3. [Hardware configuration ]("config")
 
 ## Requirements <a name="requirements"></a>
 
@@ -53,11 +54,27 @@ The motor is equipped with an incremental encoder. The encoder hat 1000 counts/r
 
 <img src="https://rdelpoux.github.io/img/MotorConnection.PNG">
 
-## Hardware configuration
+The connexion between the motor and the MCLV-V2 is shown below :
 
-### Pinout of the [MCLV-V2](https://www.microchip.com/dsPICDEMMCLV-2DevelopmentBoard866)  with the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) with external Op-AMP
+<img src="https://rdelpoux.github.io/img/MCLV/MotorConnection.jpg" width="400">
 
-The pinout of the MCLV-2 board with the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) with external Op-AMP configuration is described in its [Information Sheet](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207).
+
+
+
+
+
+
+## Hardware configuration <a name="config"></a>
+
+### Pinout of the [MCLV-V2](https://www.microchip.com/dsPICDEMMCLV-2DevelopmentBoard866)  with the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) and external Op-AMP
+
+The pinout of the MCLV-2 board with the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) and external Op-AMP configuration is described in its [Information Sheet](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207).
+
+<img src="https://rdelpoux.github.io/img/MCLV/MLCV2.jpg" width="600">
+
+It is important to verify that External OP_AMP Configuration is plugged :
+
+<img src="https://rdelpoux.github.io/img/MCLV/ExternalOpAmp.jpg" width="200">
 
 The table below provide important pinout informations.
 
