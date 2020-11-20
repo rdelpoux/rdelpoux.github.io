@@ -3,7 +3,7 @@
 ## Table of content
 
 1. [Requirements](#Requirements)
-2. [Motor specifications](#Motor specifications)
+2. [Motor specifications](#Motor_specifications)
 
 ## Requirements
 
