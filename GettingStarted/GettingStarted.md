@@ -28,13 +28,13 @@
 
 ## Motor specifications <a name="motor"></a>
 
-<img src="https://rdelpoux.github.io/img/motorTeknic.png">
-
-
+<img src="https://rdelpoux.github.io/img/motorTeknic.png" width="400">
 
 
 
 The proposed motor for this experimentation is a Permanent Magnet Synchronous Motor (PMSM) The  ([N23 Industrial Grade Motors](https://rdelpoux.github.io/Datasheets/N23_Industrial_Grade_Motors_v6.0.pdf))
+
+### Motor parameters
 
 The motor parameters are :
 
@@ -48,12 +48,6 @@ The motor parameters are :
 | Fluid friction    | f = 1.10^5 N.m.s/rad |
 
 The motor is equipped with an incremental encoder. The encoder hat 1000 counts/rev.
-
-## 
-
-
-
-### Motor parameters
 
 ### Motor connection
 
