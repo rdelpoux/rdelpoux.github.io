@@ -44,7 +44,7 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://github
 
 - ### [Getting Started](/GettingStarted/GettingStarted.md)
 
-- ### [Mplab For Simulink]()(/MplabForSimulink/MplabForSimulink.md)
+- ### [Mplab For Simulink](/MplabForSimulink/MplabForSimulink.md)
 
 - 
 
