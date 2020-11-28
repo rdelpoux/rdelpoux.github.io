@@ -2,7 +2,7 @@
 
 # Getting Started
 
-## Table of content
+## Table of contents
 
 1. [Requirements](#requirements)
 2. [Motor specifications](#motor)
@@ -48,6 +48,16 @@ The motor parameters are :
 | Inertia           | J =1.10^5 kg.m^2     |
 | Fluid friction    | f = 1.10^5 N.m.s/rad |
 
+The motor parameters have been identified on-line using the procedure described on the video : 
+
+# ["All In One" motor Parameters Identification and control embedded in a dsPIC DSCs](https://www.youtube.com/watch?v=YwpB8wvrOGs)
+
+Further details can be found on the identification procedure can be found in the article available [here](https://www.sciencedirect.com/science/article/abs/pii/S0967066114000458):
+
+- R. Delpoux, M. Bodson, T. Floquet, Parameter estimation of permanent magnet stepper motors without mechanical sensors, Control Engineering Practice, Volume 26, 2014, Pages 178-187.
+
+
+
 The motor is equipped with an incremental encoder. The encoder hat 1000 counts/rev.
 
 ### Motor connection
@@ -78,35 +88,28 @@ It is important to verify that External OP_AMP Configuration is plugged :
 
 The table below provide important pinout informations.
 
-| MCLV-2 Board  | ATSAME54  |
-| :-----------: | :-------: |
-|     LED1      |    B27    |
-|     LED2      |    B26    |
-|               |           |
-|    BTN S2     |    D9     |
-|    BTN S3     |    D10    |
-|               |           |
-|   UART\_Rx    |    A13    |
-|   UART\_Tx    |    A12    |
-|               |           |
-| PWM1 \(L/H\)  | A16 - A8  |
-| PWM2 \(L/H\)  | A17 - A9  |
-| PWM3 \(L/H\)  | A18 - A10 |
-|   MC\_FAULT   |    xxx    |
-|               |           |
-|  HALLA / QEA  |    C16    |
-|  HALLB / QEB  |    C17    |
-| HALLC / INDX  |    C18    |
-|     HOME      |   RC10    |
-|               |           |
-|      Pot      |    xxx    |
-|     VBUS      |    xxx    |
-|      Ia       |    xxx    |
-|      Ib       |    xxx    |
-|  Ibus / Vbus  |    xxx    |
-|               |           |
-| PGC \(debug\) |    xxx    |
-| PGD \(debug\) |    xxx    |
+| MCLV-2 Board | ATSAME54  |
+| :----------: | :-------: |
+|     LED1     |    B27    |
+|     LED2     |    B26    |
+|              |           |
+|    BTN S2    |    D9     |
+|    BTN S3    |    D10    |
+|              |           |
+|   UART\_Rx   |    A13    |
+|   UART\_Tx   |    A12    |
+|              |           |
+| PWM1 \(L/H\) | A16 - A8  |
+| PWM2 \(L/H\) | A17 - A9  |
+| PWM3 \(L/H\) | A18 - A10 |
+|              |           |
+| HALLA / QEA  |    C16    |
+| HALLB / QEB  |    C17    |
+| HALLC / INDX |    C18    |
+|              |           |
+|     Pot      |    A06    |
+|      Ia      |    A02    |
+|      Ib      |    B08    |
 
 
 
