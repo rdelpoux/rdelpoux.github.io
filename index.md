@@ -4,8 +4,6 @@
 
 ### Authors
 
-
-
 - Romain DELPOUX (Romain.Delpoux at insa-lyon.fr), Assistant Professor, INSA de Lyon, Laboratoire Ampère UMR CNRS 5005.
 - Lubin KERHUEL (Lubin.Kerhuel at microchip.com), Software Engineer, Microchip Technology Inc.
 
@@ -23,7 +21,7 @@ The objective is not to hide and make totally transparent the code generation bu
 
 
 
-This word is realized in collaboration between [ctrl+elec](http://www.ctrl-elec.fr/en/ctrl-elec/) and Microchip engineers developing [MPLAB Device Blocks for Simulink](https://github.com/LubinKerhuel/MPLAB-Device-Blocks-for-Simulink.git)
+This work is realized in collaboration between [ctrl+elec](http://www.ctrl-elec.fr/en/ctrl-elec/) and Microchip engineers developing [MPLAB Device Blocks for Simulink](https://github.com/LubinKerhuel/MPLAB-Device-Blocks-for-Simulink.git).
 
 ### ctrl + elec
 
@@ -44,7 +42,19 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://github
 
 ## Content
 
-- [Getting Started](/GettingStarted/GettingStarted.md)
+- ### [Getting Started](/GettingStarted/GettingStarted.md)
 
+- ### [Mplab For Simulink]()(/MplabForSimulink/MplabForSimulink.md)
 
+- 
+
+## License 
+
+The proposed algorithms on this website are free of charge to use and is openly distributed, but note that
+
+1.  Copyright owned by Romain Delpoux.
+2. The content of the website must be referenced when used in published work :
+   1. Romain Delpoux, Lubin Kerhuel, Vincent Léchappé, Arnaud Duvernois. On Chip Rapid Control Prototyping for Education. *21st IFAC World Congress (IFAC 2020)*, Jul 2020, Berlin, Germany. [⟨hal-02928430⟩](https://hal.archives-ouvertes.fr/hal-02928430)
+3. The algorithms, or forks of the algorithms may not be re-distributed as a part of a commercial product unless agreed upon with the copyright owner. 
+4. This work is distributed in the hope that it will be useful, but without any warranty, without event the implied warranty of merchantability or fitness for a particular purpose.
 
