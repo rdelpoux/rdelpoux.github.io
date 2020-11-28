@@ -24,7 +24,7 @@ In a **Single tasking program**, all tasks started at a given base model time st
 
 In a **Multi tasking scheduler**, a monotonic-rate scheduler is implemented where higher rate tasks have higher priority and interrupt lower task rate which have lower priority whenever required. This multi-tasking scheduler has a simple priority rule which is well suited for automatic. Its limited implementation penalty in execution time worth the gain in flexibility.
 
-<img src="https://github.com/rdelpoux/rdelpoux.github.io/img/RCP/ModelwithSampleTime.png" width="500">
+<img src="https://rdelpoux.github.io/img/RCP/ModelwithSampleTime.png">
 
 <img src="https://rdelpoux.github.io/img/RCP/Scheduler_MultiTasking_Scope.png">
 
