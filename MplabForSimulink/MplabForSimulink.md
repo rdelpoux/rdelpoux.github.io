@@ -16,6 +16,10 @@ Simulations are typically performed in the continuous time domain using Matlab/S
 
 Multi-rate model comprises blocks running at various rates. For each block, it is possible to set its rate and its offset. Blocks rate offset are multiple of the base model time step defined in the solver panel. A multi-rate model can be implemented using a multi-tasking scheduler (default settings) or a single tasking program.
 
+<img src="https://rdelpoux.github.io/img/RCP/ModelwithSampleTime.png">
+
+Simulink highlights blocks with colors to represent rates as represented on the figure. This option is displayed by clicking on the "Sampling Time" icon represented by two blue and red arrows.
+
 ### Single tasking program
 
 In a **Single tasking program**, all tasks started at a given base model time step must be completed within the end of that time step slot to respect real-time constraints.
@@ -24,17 +28,13 @@ In a **Single tasking program**, all tasks started at a given base model time st
 
 In a **Multi tasking scheduler**, a monotonic-rate scheduler is implemented where higher rate tasks have higher priority and interrupt lower task rate which have lower priority whenever required. This multi-tasking scheduler has a simple priority rule which is well suited for automatic. Its limited implementation penalty in execution time worth the gain in flexibility.
 
-<img src="https://rdelpoux.github.io/img/RCP/ModelwithSampleTime.png">
+
 
 <img src="https://rdelpoux.github.io/img/RCP/Scheduler_MultiTasking_Scope.png">
 
+The figure presents a timing analysis for a motor control with the CPU load state (black curve where 1 is busy and 0 is idle state), the fast task D1 (red) and slow task D2 (green) respective start and stop on rising and falling edges. 
 
-
-
-
-
-
-Figure \ref{fig:Scheduler_Scope} presents a timing analysis of the cascaded PI algorithms. One pins driven by the `CPU load' block and two pins driven by the `task state' block shows respectively the CPU state (black curve where 1 is busy and 0 is idle state), the fast task D1 (red) and slow task D2 (green) respective start and stop on rising and falling edges. The lower graph is a magnification of the higher priority task D1 preemption of the lower priority task D2. Note that, the slow D2 task pin state is not cleared when being preempted but exclusively when task is completed. The shaded region in the tasks D1 and D2 shows the CPU execution on each task. Here the control algorithm is modified to show an example of preemption: The mechanical control loop is implemented using floating point instead of fixed point so as to increasing the related task `D2' execution time to $55 \mu$s which is above the $50 \mu$s period of the $20\kilo\hertz$ D1 task. This slow down of the D1 task allows illustrating the benefit of a Multi-tasking scheduler as presented on Figure \ref{fig:Scheduler_Scope}.
+The lower graph is a magnification of the higher priority task D1 preemption of the lower priority task D2. Note that, the slow D2 task is not cleared when being preempted but exclusively when task is completed. The shaded region in the tasks D1 and D2 shows the CPU execution on each task. This illustrates the benefit of a Multi-tasking scheduler as presented on the Figure.
 
 ### Code efficiency
 
@@ -42,7 +42,7 @@ The code performance are surprisignly good. Peripheral are handled as in backgro
 
 ### Code replacement
 
- This MathWorks functionality allows replacing code of standard Simulink blocks by an optimized code for the target so as to benefit from the optimized target hardware architecture like its DSP unit or specific instruction set. Code replacement is implemented for common operations like rounding, saturation and few operations on matrix. It is also implemented for functions like square root, sine and cosine functions when used with fixed point datatype input. 
+This MathWorks functionality allows replacing code of standard Simulink blocks by an optimized code for the target so as to benefit from the optimized target hardware architecture like its DSP unit or specific instruction set. Code replacement is implemented for common operations like rounding, saturation and few operations on matrix. It is also implemented for functions like square root, sine and cosine functions when used with fixed point datatype input. 
 
 
 
