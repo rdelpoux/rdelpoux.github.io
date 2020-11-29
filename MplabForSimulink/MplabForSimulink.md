@@ -6,7 +6,7 @@ This page details the important steps for the real-time implementation of a mult
 
 
 
-Embedded codes need however respect some constraints.  
+Embedded codes need however to respect some constraints.  
 
 ## Discrete time 
 
