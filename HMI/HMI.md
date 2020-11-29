@@ -26,9 +26,15 @@ The use of **picgui** is illustrated through a simple exemple. A repeating seque
 
 <img src="https://rdelpoux.github.io/img/picGUI/ModelSerial_base.PNG" title="pigui demo: base">
 
-The model is sampled at 0.1ms while the UART is sampled at 0.5ms. For this sampling rate, a high baudrate is required. Using BaudRate = 921600, the serial link is able to send 9.22 bytes/step. After build, the **Tx - Matlab block** highlight the *Bytes / Step*. Note thta using this baudrate at this frequency sending 2 data takes 2 bytes / step. The UART configuration is the following : 
+The model is sampled at 0.1ms while the UART is sampled at 0.5ms. For this sampling rate, a high baudrate is required. Using a BaudRate = 921600, the serial link is able to send 9.22 bytes/step. After build, the **Tx - Matlab block** highlight the *Bytes / Step*. Note that using configuration,  sending 2 variables takes 2 bytes / step. The UART configuration is the following : 
 
 <img src="https://rdelpoux.github.io/img/picGUI/Serial_matlab.PNG" width="400">
+
+Double click on the **picgui Graphical interface** open the following interface : 
+
+<img src="https://rdelpoux.github.io/img/picGUI/picgui.PNG" width="400">
+
+<img src="https://rdelpoux.github.io/img/picGUI/StepResponse.PNG" width="400">StepResponse
 
 
 
