@@ -46,7 +46,7 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://github
 
 - ### [Mplab For Simulink](/MplabForSimulink/MplabForSimulink.md)
 
-- 
+- ### [HMI (Human Machine Interface)](/HMI/HMI.md)
 
 ## License 
 
