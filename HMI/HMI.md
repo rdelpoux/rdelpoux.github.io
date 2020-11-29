@@ -24,7 +24,13 @@ The pin connection is represented below.
 
 The use of **picgui** is illustrated through a simple exemple. A repeating sequence stair sapled at 1s is apply to a simple fisrt order system where K= 1 and tau = 0.1. The input and the output of the system are linked to the with **Tx - Matlab block** to plot using **picgui**. The model used is represented blow and can be download [here](https://github.com/rdelpoux/rdelpoux.github.io/blob/master/Dev/ExPicGUI/SAME5x_EXpicGUI_base.slx): 
 
-<img src="https://rdelpoux.github.io/img/picGUI/ModelSerial_base.PNG">
+<img src="https://rdelpoux.github.io/img/picGUI/ModelSerial_base.PNG" title="pigui demo: base">
+
+The model is sampled at 0.1ms while the UART is sampled at 0.5ms. The uart configuration is the following : 
+
+<img src="https://rdelpoux.github.io/img/picGUI/Serial_matlab.PNG" width = "500">
+
+
 
 
 
