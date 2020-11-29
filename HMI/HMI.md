@@ -34,7 +34,13 @@ Double click on the **picgui Graphical interface** open the following interface 
 
 <img src="https://rdelpoux.github.io/img/picGUI/picgui.PNG" width="400">
 
-<img src="https://rdelpoux.github.io/img/picGUI/StepResponse.PNG" width="400">StepResponse
+Select the right **Com** port and **baudrate** then press **Connexion**. A click on **Start button** plot the figure(50), based on code written in the central window.
+
+<img src="https://rdelpoux.github.io/img/picGUI/StepResponse.PNG" width="400">
+
+
+
+
 
 
 
