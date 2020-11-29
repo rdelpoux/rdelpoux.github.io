@@ -18,7 +18,9 @@ Although the MCLV2 board has ports to connect a serial link (USB, RS232), in thi
 
 The pin connection is represented below.
 
-<img src="https://rdelpoux.github.io/img/MCLV/Serial.png" width="1000">
+<img src="https://rdelpoux.github.io/img/MCLV/Serial.jpg" width="500">
+
+## PicGUI
 
 
 
