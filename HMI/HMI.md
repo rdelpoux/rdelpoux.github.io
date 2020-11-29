@@ -26,9 +26,15 @@ The use of **picgui** is illustrated through a simple exemple. A repeating seque
 
 <img src="https://rdelpoux.github.io/img/picGUI/ModelSerial_base.PNG" title="pigui demo: base">
 
-The model is sampled at 0.1ms while the UART is sampled at 0.5ms. The uart configuration is the following : 
+The model is sampled at 0.1ms while the UART is sampled at 0.5ms. The UART configuration is the following : 
 
-<img src="https://rdelpoux.github.io/img/picGUI/Serial_matlab.PNG" width = "500">
+<img src="https://rdelpoux.github.io/img/picGUI/Serial_matlab.PNG" width="500">
+
+
+
+
+
+
 
 
 
