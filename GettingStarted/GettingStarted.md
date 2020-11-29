@@ -116,5 +116,5 @@ The table below provide important pinout informations.
 
 Programmers like PicKit or Snap can directly be connected to the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) as shown on the picture below.
 
-<tr> <td><img src="https://rdelpoux.github.io/img/MCLV/Programmer1.jpg" height="300"/> </td> <td><img src="https://rdelpoux.github.io/img/MCLV/Programmer2.jpg" height="300"/></td> </tr>
+<tr> <td><img src="https://rdelpoux.github.io/img/MCLV/Programmer1.jpg" height="200"/> </td> <td><img src="https://rdelpoux.github.io/img/MCLV/Programmer2.jpg" height="200"/></td> </tr>
 
