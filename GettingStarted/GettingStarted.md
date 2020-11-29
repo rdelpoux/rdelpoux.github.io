@@ -7,6 +7,7 @@
 1. [Requirements](#requirements)
 2. [Motor specifications](#motor)
 3. [Hardware configuration ]("config")
+4. [Programmer]("prog")
 
 ## Requirements <a name="requirements"></a>
 
@@ -51,9 +52,7 @@ The motor parameters are :
 The motor parameters have been identified on-line using the procedure described on the video : 
 
 ["All In One" motor Parameters Identification and control embedded in a dsPIC DSCs](https://www.youtube.com/watch?v=YwpB8wvrOGs)
-$$
-a_1
-$$
+
 Further details can be found on the identification procedure can be found in the article available [here](https://www.sciencedirect.com/science/article/abs/pii/S0967066114000458):
 
 - R. Delpoux, M. Bodson, T. Floquet, Parameter estimation of permanent magnet stepper motors without mechanical sensors, Control Engineering Practice, Volume 26, 2014, Pages 178-187.
@@ -113,5 +112,9 @@ The table below provide important pinout informations.
 |      Ia      |    A02    |
 |      Ib      |    B08    |
 
+## Programmer <a name="prog"></a>
 
+Programmers like PicKit or Snap can directly be connected to the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) as shown on the picture below.
+
+<tr> <td><img src="https://rdelpoux.github.io/img/MCLV/Programmer1.jpg" height="300"/> </td> <td><img src="https://rdelpoux.github.io/img/MCLV/Programmer2.jpg" height="300"/></td> </tr>
 
