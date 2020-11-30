@@ -40,14 +40,16 @@ The proposed motor for this experimentation is a Permanent Magnet Synchronous Mo
 
 The motor parameters are :
 
-| Parameter         | Value                |
-| ----------------- | -------------------- |
-| Pole pairs number | p=4                  |
-| Stator resistance | R=0.6 Ohm            |
-| Stator inductance | L= 0.35mH            |
-| Flux constant     | Phif = 6.6mWb        |
-| Inertia           | J =1.10^5 kg.m^2     |
-| Fluid friction    | f = 1.10^5 N.m.s/rad |
+| Parameter         | Value                 |
+| ----------------- | --------------------- |
+| Max voltage       | V = 24V               |
+| Max current       | I = 4A                |
+| Pole pairs number | p=4                   |
+| Stator resistance | R=0.6 Ohm             |
+| Stator inductance | L= 0.35mH             |
+| Flux constant     | Phif = 6.6mWb         |
+| Inertia           | J =1.10^-5 kg.m^2     |
+| Fluid friction    | f = 1.10^-5 N.m.s/rad |
 
 The motor parameters have been identified on-line using the procedure described on the video : 
 
