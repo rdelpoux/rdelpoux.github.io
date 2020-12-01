@@ -26,9 +26,14 @@
   - Fixed point toolbox
 - [MPLAB device blocks for Simulink](https://www.microchip.com/SimulinkBlocks)
 - [MPLAB X IDE](https://www.microchip.com/MPLABX) development (required to flash the binary from matlab)
-- [XC16](https://www.microchip.com/XC16) compiler
+- [XC32](https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-xc-compilers) compiler
 
-The verify correct configuration you can use the test program [here](https://github.com/rdelpoux/rdelpoux.github.io/blob/master/Dev/Config/SAME5x_PIM_MCLV2_Test_programme.slx)
+The verify correct configuration you can use the test program 
+
+- [here for Matlab 2020b](https://github.com/rdelpoux/rdelpoux.github.io/blob/master/Dev/Config/SAME5x_PIM_MCLV2_Test_programme.slx)
+- [here for Matlab 2018b](https://github.com/rdelpoux/rdelpoux.github.io/blob/master/Dev/Config/SAME5x_PIM_MCLV2_Test_programme_2018b.slx)
+
+## 
 
 ## Motor specifications <a name="motor"></a>
 
