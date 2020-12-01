@@ -28,6 +28,8 @@
 - [MPLAB X IDE](https://www.microchip.com/MPLABX) development (required to flash the binary from matlab)
 - [XC16](https://www.microchip.com/XC16) compiler
 
+The verify correct configuration you can use the test program [here](https://github.com/rdelpoux/rdelpoux.github.io/blob/master/Dev/Config/SAME5x_PIM_MCLV2_Test_programme.slx)
+
 ## Motor specifications <a name="motor"></a>
 
 <img src="https://rdelpoux.github.io/img/motorTeknic.png" width="400">
@@ -118,11 +120,7 @@ The table below provide important pinout informations.
 
 Programmers like PicKit or Snap can directly be connected to the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) as shown on the picture below.
 
-<<<<<<< HEAD
 <img src="https://rdelpoux.github.io/img/MCLV/Programmer.jpg" width="600"/>
 
 
-=======
-<tr> <td><img src="https://rdelpoux.github.io/img/MCLV/Programmer1.jpg" height="200"/> </td> <td><img src="https://rdelpoux.github.io/img/MCLV/Programmer2.jpg" height="200"/></td> </tr>
->>>>>>> 10adefba726b15c7ebd6e9d6ad010c78aabd4e2e
 
