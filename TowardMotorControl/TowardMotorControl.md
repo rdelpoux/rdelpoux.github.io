@@ -1,4 +1,4 @@
-# Toward Motor Control
+10Hz# Toward Motor Control
 
 ## System Configuration
 
@@ -22,9 +22,9 @@ Add the following blocks :
 
 And configure the Microchip master. It allows the choice of the micro-controller,  and the oscillator. For this project, the block must be configured as follow : 
 
-<img src="https://rdelpoux.github.io/img/TowardMotorControl/MicrochipMasterGeneral.PNG" width="300"><img src="https://rdelpoux.github.io/img/TowardMotorControl/MicrochipMasterOscillator.PNG" width="300">
+<img src="https://rdelpoux.github.io/img/TowardMotorControl/MicrochipMasterGeneral.PNG" width="350"><img src="https://rdelpoux.github.io/img/TowardMotorControl/MicrochipMasterOscillator.PNG" width="350">
 
-The first step to verify the configuration is to blink a LED for example with a frequency of 10Hz.
+The first step to verify the configuration is to blink a LED for example with a frequency of 5Hz.
 
 <img src="https://rdelpoux.github.io/img/TowardMotorControl/DBG_LED.PNG" width="800">
 

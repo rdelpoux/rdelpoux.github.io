@@ -9,7 +9,7 @@
 
 ### Introduction
 
-This website provide keys for motor Rapid Control Prototyping. Originally intended to 5th year students in the [electrical engineering department](http://ge.insa-lyon.fr/) of [INSA Lyon](http://www.insa-lyon.fr/) for the [CCSA](http://ge-option5a.insa-lyon.fr/content/ccsa-commande-de-convertisseurs-et-de-systemes-dactionnement) option, the objective of these pages is to propose an initiation to the programming environment toolbox [MPLAB Device Blocks for Simulink](https://www.microchip.com/DevelopmentTools/ProductDetails/sw007023#utm_source=MicroSolutions&utm_medium=Link&utm_term=FY16Q4&utm_content=DevTools&utm_campaign=Article). [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892) allows the use of Matlab Simulink to directly target Microchip Microcontroller. 
+This website provide keys for motor Rapid Control Prototyping. Originally intended to 5th year students in the [electrical engineering department](http://ge.insa-lyon.fr/) of [INSA Lyon](http://www.insa-lyon.fr/) for the [CCSA](http://ge-option5a.insa-lyon.fr/content/ccsa-commande-de-convertisseurs-et-de-systemes-dactionnement) option, the objective of these pages is to propose an initiation to the programming environment toolbox [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892). It allows targetting Microchip Microcontrollers directly from the Matlab-Simulink environnement. 
 
 Developing embedded code for microcontrollers requires skills that are out of scope of the curriculum of control system engineers which is typically limited to high level tools like Matlab/Simulink and Rapid Control Prototyping tools like dSPACE or Speedgoat. This task is often left to embedded system engineers who are specialists of hardware architecture but have little knowledge in control theory. It is clear that there is a lack of engineers able to deal with the full process from control design to hardware implementation. 
 
@@ -36,9 +36,9 @@ The platform [ctrl+elec](http://www.ctrl-elec.fr/en/ctrl-elec/) is positioned be
 
  [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892) enables Embedded Coder for automated build and execution of real-time executable for any board equipped with a dsPIC :registered:, PIC32 :registered:, SAMx5 or SAMx7 from a Simulink model.
 
-<img src="https://github.com/LubinKerhuel/MPLAB-Device-Blocks-for-Simulink/raw/master/mplab-deviceblocksforsimulink-whitebackground.png" width="300">
+<img src="https://github.com/LubinKerhuel/MPLAB-Device-Blocks-for-Simulink/raw/master/mplab-deviceblocksforsimulink-whitebackground.png" width="150">
 
-For more informations refer to [MPLAB Device Blocks for Simulink](https://github.com/LubinKerhuel/MPLAB-Device-Blocks-for-Simulink.git)
+For more informations refer to [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892)
 
 ## Content
 
