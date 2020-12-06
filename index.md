@@ -48,6 +48,8 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://github
 
 - ### [HMI (Human Machine Interface)](/HMI/HMI.md)
 
+- ### [Toward Motor Control](/TowardMotorControl/TowardMotorControl.md) 
+
 ## License 
 
 The proposed algorithms on this website are free of charge to use and is openly distributed, but note that
