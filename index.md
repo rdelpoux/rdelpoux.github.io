@@ -50,7 +50,7 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://www.ma
 
 - ### [HMI (Human Machine Interface)](/HMI/HMI.md)
 
-## License 
+## License
 
 The proposed algorithms on this website are free of charge to use and is openly distributed, but note that
 
