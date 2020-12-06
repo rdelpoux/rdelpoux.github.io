@@ -28,21 +28,27 @@ The first step to verify the configuration is to blink a LED for example with a 
 
 <img src="https://rdelpoux.github.io/img/TowardMotorControl/DBG_LED.PNG" width="800">
 
-## Pulse Width Modulation (PWM)
+## Motor interface
 
+ For motor vector control, three blocks needs to be inserted and configured :
 
+<img src="https://rdelpoux.github.io/img/TowardMotorControl/MotorConfig.PNG" width="800">
+
+- Pulse Width Modilation (PWM)
+- Quadrature Encodre (PDEC)
+- Analog Digital Converters (ADC)
+
+### Pulse Width Modulation (PWM)
 
 <img src="https://rdelpoux.github.io/img/TowardMotorControl/PWM_Main.PNG" width="350"><img src="https://rdelpoux.github.io/img/TowardMotorControl/PWM_Initial_Values.PNG" width="350"><img src="https://rdelpoux.github.io/img/TowardMotorControl/PWM_Inputs.PNG" width="350">
 
 
 
-
-
-## Encoder 
+### Encoder 
 
 <img src="https://rdelpoux.github.io/img/TowardMotorControl/PDECmain.PNG" width="350"><img src="https://rdelpoux.github.io/img/TowardMotorControl/PDECoptions.PNG" width="350">
 
-## ADC
+### ADC
 
 **Currents measurements:**
 
