@@ -1,4 +1,4 @@
-10Hz# Toward Motor Control
+# Toward Motor Control
 
 ## System Configuration
 
@@ -24,13 +24,23 @@ And configure the Microchip master. It allows the choice of the micro-controller
 
 <img src="https://rdelpoux.github.io/img/TowardMotorControl/MicrochipMasterGeneral.PNG" width="350"><img src="https://rdelpoux.github.io/img/TowardMotorControl/MicrochipMasterOscillator.PNG" width="350">
 
-The first step to verify the configuration is to blink a LED for example with a frequency of 5Hz.
+The first step to verify the configuration is to blink a LED for example with a frequency of 10Hz.
 
 <img src="https://rdelpoux.github.io/img/TowardMotorControl/DBG_LED.PNG" width="800">
 
 ## Pulse Width Modulation (PWM)
 
+
+
+<img src="https://rdelpoux.github.io/img/TowardMotorControl/PWM_Main.PNG" width="350"><img src="https://rdelpoux.github.io/img/TowardMotorControl/PWM_Initial_Values.PNG" width="350"><img src="https://rdelpoux.github.io/img/TowardMotorControl/PWM_Inputs.PNG" width="350">
+
+
+
+
+
 ## Encoder 
+
+<img src="https://rdelpoux.github.io/img/TowardMotorControl/PDECmain.PNG" width="350"><img src="https://rdelpoux.github.io/img/TowardMotorControl/PDECoptions.PNG" width="350">
 
 ## ADC
 
@@ -38,14 +48,31 @@ The first step to verify the configuration is to blink a LED for example with a 
 
 All Shunt resistances are **0.025 Ohms**.
 
+<img src="https://rdelpoux.github.io/img/TowardMotorControl/Shunt.PNG" height="300"><img src="https://rdelpoux.github.io/img/TowardMotorControl/GainADC.PNG" height="180">
+
+
+
 Two shunts measures Ia and Ib on PWM1 and PWM2 (low side). The third shunt measure Ibus which is the current sum of the three PWM (low side) currents.
 
-Op-Amps (Internal or External) with a **gain of 15** boost low voltage measured to higher voltage converted by the dsPIC ADC for signals Ia, Ib and Ibus. (see [fig4 from DS52062B](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/Figures/GettingStarted/Internal_OpAmp_DS52062B_Fig4.png))
+Op-Amps (Internal or External) with a **gain of 15** boost low voltage measured to higher voltage converted by the dsPIC ADC for signals Ia, Ib and Ibus. 
 
-VADC=0.025∗15∗Ishunt V_{ADC} = 0.025*15*I_{shunt} V_{ADC}=0.025∗15∗Ishunt
+<img src="https://rdelpoux.github.io/img/TowardMotorControl/DifferentialGain.PNG" width="300">
 
-For the ADC configured for 10 bits right aligned conversion, the raw output represents:
+Vadc=0.025∗15∗Ishunt
 
-ADCout=0.025∗15∗10243.3∗Ishunt=116.36∗IshuntADC_{out} = 0.025*15 * \frac{1024}{3.3}* I_{shunt} = 116.36 * I_{shunt}ADCout=0.025∗15∗3.31024∗Ishunt=116.36∗Ishunt
+For the ADC configured for 12 bits right aligned conversion, the raw output represents:
 
-The maximum measurable current is +-4.4 A which provides values within [-512 512] range.
+ADCout=0.025∗15∗4096/3.3∗Ishunt=465.45∗Ishunt
+
+The maximum measurable current is +-4.4 A which provides values within [0 4096] range.
+
+The ADC bloc is the following : 
+
+And must be configure as follow : 
+
+<img src="https://rdelpoux.github.io/img/TowardMotorControl/ADCMain.PNG" width="250"><img src="https://rdelpoux.github.io/img/TowardMotorControl/ADCSeq0.PNG" width="250"><img src="https://rdelpoux.github.io/img/TowardMotorControl/ADCSeq1.PNG" width="250">
+
+
+
+
+
