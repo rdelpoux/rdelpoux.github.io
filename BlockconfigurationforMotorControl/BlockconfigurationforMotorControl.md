@@ -24,6 +24,12 @@ And configure the Microchip master. It allows the choice of the micro-controller
 
 <img src="https://rdelpoux.github.io/img/TowardMotorControl/MicrochipMasterGeneral.PNG" width="300"><img src="https://rdelpoux.github.io/img/TowardMotorControl/MicrochipMasterOscillator.PNG" width="300">
 
+- Compiler Options 
+
+<img src="https://rdelpoux.github.io/img/TowardMotorControl/Compiler.PNG" width="300">
+
+- Debug LED
+
 The first step to verify the configuration is to blink a LED for example with a frequency of 5Hz.
 
 <img src="https://rdelpoux.github.io/img/TowardMotorControl/DBG_LED.PNG" width="800">
