@@ -9,6 +9,7 @@
 ## Connection to the PC
 
 Although the MCLV2 board has ports to connect a serial link (USB, RS232), in this example we are using an special [FTDI cable](https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_C232HD_UART_CABLE.pdf). The USB 2.0 Hi-Speed to UART cable incorporates FTDI’s FT232H USB to UART interface IC device which handles all the USB signalling and protocols.  The cable provides a fast, simple way to connect devices with 3.3 volt digital interfaces to USB. 
+[FTDI cable Driver](https://www.ftdichip.com/Drivers/VCP.htm)
 
 <img src="https://rdelpoux.github.io/img/picGUI/C232HDconnection.png" width="500">
 
