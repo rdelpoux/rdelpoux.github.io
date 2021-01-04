@@ -1,6 +1,6 @@
-# HMI (Human Machine Interface)
+# GUI (Graphical User Interface)
 
- [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892) provide a simple but powerful user interface. It allows to send and receive data from the chip using a Serial link.
+ [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892) provide a simple but powerful graphical user interface. It allows to send and receive data from the chip using a Serial link.
 
 <img src="https://rdelpoux.github.io/img/picGUI/DataVisu.png" width="1000">
 
@@ -20,7 +20,7 @@ The pin connection is represented below.
 
 <img src="https://rdelpoux.github.io/img/MCLV/Serial.jpg" width="500">
 
-## picGUI
+## picgui
 
 The use of **picgui** is illustrated through a simple exemple. A repeating sequence stair sapled at 1s is apply to a simple fisrt order system where K= 1 and tau = 0.1. The input and the output of the system are linked to the with **Tx - Matlab block** to plot using **picgui**. The model used is represented blow and can be download [here](https://github.com/rdelpoux/rdelpoux.github.io/blob/master/Dev/ExPicGUI/SAME5x_EXpicGUI_base.slx): 
 

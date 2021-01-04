@@ -48,7 +48,7 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://www.ma
 
 - ### [Block configuration for Motor Control](/BlockconfigurationforMotorControl/BlockconfigurationforMotorControl.md) 
 
-- ### [HMI (Human Machine Interface)](/HMI/HMI.md)
+- ### [GUI (Graphical User Interface)](/GUI/GUI.md)
 
 ## License
 
