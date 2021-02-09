@@ -4,27 +4,54 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title>Pandoc math demos</title>
+  <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css" /><script type="text/javascript">window.onload = function(){var mathElements = document.getElementsByClassName("math");
-  for (var i=0; i < mathElements.length; i++)
-  {
-   var texText = mathElements[i].firstChild
-   katex.render(texText.data, mathElements[i])
-  }}
-  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
 </head>
 <body>
-<div id="header">
-<h1 class="title">Pandoc math demos</h1>
+<h1 id="permanent-magnet-synchronous-motor-modeling">Permanent magnet synchronous motor modeling</h1>
+<h2 id="modeling">Modeling</h2>
+<h3 id="operative-part-scheme">Operative part scheme</h3>
+<p><img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/NotePMSM/VersionHTML/img/motorinverter.png" alt="System motor converter " width=600 /></p>
+<p><img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/NotePMSM/VersionHTML/img/PMSMscheme.png" alt="System motor converter " width=800 /></p>
+<h3 id="classical-abc-frame">Classical <span class="math inline">\(abc\)</span> frame</h3>
+<span class="math display">\[\begin{equation}
+
+\label{eq:modeleabc}
+
+\left\{\begin{array}{rcl}
+
+L \frac{di_{a}}{dt} &amp; = &amp; v_{a}-R i_{a}+ p \phi_f  \Omega \sin(p\theta)\\\\
+
+L \frac{di_{b}}{dt} &amp; = &amp; v_{b}-R i_{b}+ p \phi_f  \Omega \sin\left(p\theta-\frac{2\pi}{3}\right)\\\\
+
+L \frac{di_{c}}{dt} &amp; = &amp; v_{c}-R i_{c}+ p \phi_f  \Omega \sin\left(p\theta+\frac{2\pi}{3}\right)\\\\
+
+J\frac{d\Omega}{dt} &amp;=&amp; \tau_m-\tau_l \\\\
+
+{\frac{d\theta}{dt}} &amp;=&amp; \Omega\\
+
+\end{array}\right.
+
+\end{equation}\]</span>
+<p>where <span class="math inline">\(i_{abc} = \left[\begin{matrix}i_a &amp; i_b &amp; i_c\end{matrix}\right]^\intercal\)</span> are the stator phase currents, <span class="math inline">\(v_{abc} = \left[\begin{matrix}v_a &amp; v_b &amp; v_c\end{matrix}\right]^\intercal\)</span> the stator phase voltages, <span class="math inline">\(\Omega\)</span> and <span class="math inline">\(\theta\)</span> are the speed and position respectively and <span class="math inline">\(p\)</span> the pole pair number. <span class="math inline">\(L\)</span> and <span class="math inline">\(R\)</span> and the staotr inductance and resistor, $_f $ the flux constant. <span class="math inline">\(\tau_r\)</span> the resistive torque and <span class="math inline">\(\tau_m\)</span> the motor torque.</p>
+<span class="math display">\[\begin{equation}
+
+\tau_m = -p\phi_f  \left[i_a\sin(p\theta) + i_b\sin\left(p\theta-\frac{2\pi}{3}\right) + i_c\sin\left(p\theta+\frac{2\pi}{3}\right)\right]
+
+\end{equation}\]</span>
+<h3 id="clarke-and-parc-transformations">Clarke and Parc transformations</h3>
+<div class="figure">
+<img src="/home/rdelpoux/Documents/Travail/Recherche/Moteurs/NotePMSM/VersionHTML/img/animatedTransfo.gif" alt="Clarke-Parc Transformations" />
+<p class="caption">Clarke-Parc Transformations</p>
 </div>
-<p><span class="math inline">a^2 + b^2 = c^2</span></p>
-<p><span class="math inline">v(t) = v_0 + \frac{1}{2}at^2</span></p>
-<p><span class="math inline">\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}</span></p>
-<p><span class="math inline">\exists x \forall y (Rxy \equiv Ryx)</span></p>
-<p><span class="math inline">p \wedge q \models p</span></p>
-<p><span class="math inline">\Box\diamond p\equiv\diamond p</span></p>
-<p><span class="math inline">\int_{0}^{1} x dx = \left[ \frac{1}{2}x^2 \right]_{0}^{1} = \frac{1}{2}</span></p>
-<p><span class="math inline">e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n</span></p>
+<p><span class="math inline">\(a^2 + b^2 = c^2\)</span></p>
+<p><span class="math inline">\(v(t) = v_0 + \frac{1}{2}at^2\)</span></p>
+<p><span class="math inline">\(\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}\)</span></p>
+<p><span class="math inline">\(\exists x \forall y (Rxy \equiv Ryx)\)</span></p>
+<p><span class="math inline">\(p \wedge q \models p\)</span></p>
+<p><span class="math inline">\(\Box\diamond p\equiv\diamond p\)</span></p>
+<p><span class="math inline">\(\int_{0}^{1} x dx = \left[ \frac{1}{2}x^2 \right]_{0}^{1} = \frac{1}{2}\)</span></p>
+<p><span class="math inline">\(e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n\)</span></p>
 </body>
 </html>
