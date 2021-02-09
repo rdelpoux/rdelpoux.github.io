@@ -1,6 +1,6 @@
-# HMI (Human Machine Interface)
+# GUI (Graphical User Interface)
 
- [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892) provide a simple but powerful user interface. It allows to send and receive data from the chip using a Serial link.
+ [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892) provide a simple but powerful graphical user interface. It allows to send and receive data from the chip using a Serial link.
 
 <img src="https://rdelpoux.github.io/img/picGUI/DataVisu.png" width="1000">
 
@@ -9,6 +9,7 @@
 ## Connection to the PC
 
 Although the MCLV2 board has ports to connect a serial link (USB, RS232), in this example we are using an special [FTDI cable](https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_C232HD_UART_CABLE.pdf). The USB 2.0 Hi-Speed to UART cable incorporates FTDI’s FT232H USB to UART interface IC device which handles all the USB signalling and protocols.  The cable provides a fast, simple way to connect devices with 3.3 volt digital interfaces to USB. 
+[FTDI cable Driver](https://www.ftdichip.com/Drivers/VCP.htm)
 
 <img src="https://rdelpoux.github.io/img/picGUI/C232HDconnection.png" width="500">
 
@@ -20,7 +21,7 @@ The pin connection is represented below.
 
 <img src="https://rdelpoux.github.io/img/MCLV/Serial.jpg" width="500">
 
-## picGUI
+## picgui
 
 The use of **picgui** is illustrated through a simple exemple. A repeating sequence stair sapled at 1s is apply to a simple fisrt order system where K= 1 and tau = 0.1. The input and the output of the system are linked to the with **Tx - Matlab block** to plot using **picgui**. The model used is represented blow and can be download [here](https://github.com/rdelpoux/rdelpoux.github.io/blob/master/Dev/ExPicGUI/SAME5x_EXpicGUI_base.slx): 
 

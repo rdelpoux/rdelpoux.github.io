@@ -42,15 +42,15 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://www.ma
 
 ## Content
 
-- ### [Getting Started](/GettingStarted/GettingStarted.md)
+- ### [Mplab for Simulink](/MplabForSimulink/MplabForSimulink.md)
 
-- ### [Mplab For Simulink](/MplabForSimulink/MplabForSimulink.md)
+- ### [Getting started](/GettingStarted/GettingStarted.md)
 
-- ### [HMI (Human Machine Interface)](/HMI/HMI.md)
+- ### [Block configuration for Motor Control](/BlockconfigurationforMotorControl/BlockconfigurationforMotorControl.md) 
 
-- ### [Toward Motor Control](/TowardMotorControl/TowardMotorControl.md) 
+- ### [GUI (Graphical User Interface)](/GUI/GUI.md)
 
-## License 
+## License
 
 The proposed algorithms on this website are free of charge to use and is openly distributed, but note that
 
