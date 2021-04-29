@@ -4,16 +4,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="author" content="Romain DELPOUX" />
-  <title>PMSM control</title>
+  <title></title>
   <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
 </head>
 <body>
-<div id="header">
-<h1 class="title">PMSM control</h1>
-<h2 class="author">Romain DELPOUX</h2>
-</div>
 <h1 id="pmsm-control">PMSM Control</h1>
 <p>The page describes a classical cascaded vector control. Based on the motor frequency separation (i.e. a fast electrical dynamics and a slower mechanical dynamics) the control is divided in two loop :</p>
 <ul>
@@ -46,7 +41,7 @@ L \frac{di_q}{dt} &amp; = &amp; v_q-R i_q - Lp\Omega i_d -\phi_f  p\Omega
 \end{array}\right.
 \]</span></p>
 <h3 id="feedback-linearization">Feedback linearization</h3>
-<p>The model <span class="math inline">\(d-q\)</span> is still non-linear. Based on this model, choosing <span class="math inline">\(v_d\)</span> and <span class="math inline">\(v_q\)</span> as : <span class="math display">\[
+<p>The model <span class="math inline">\(d-q\)</span> is still non-linear. Based on this model, choosing <span class="math inline">\(v_d\)</span> and <span class="math inline">\(v_q\)</span> as (Bodson1993): <span class="math display">\[
 \left\{
 \begin{array}{lcl}
 v_d &amp;=&amp; u_d + Lp\Omega i_q\\
@@ -60,12 +55,146 @@ L \frac{di_d}{dt} &amp; = &amp; u_d-R i_d\\\\
 L \frac{di_q}{dt} &amp; = &amp; u_q-R i_q
 \end{array}\right.
 \]</span> whether two decoupled electrical equations. Each current can thus be controlled independently. Therefore, linear control techniques can be used.</p>
-<h2 id="mechanical-dynamics">Mechanical Dynamics</h2>
+<p><strong>Feedback control with integral action</strong></p>
+<p>The for each current electrical $i_k;k, the dynamic is given by</p>
+<p><span class="math display">\[
+\begin{array}{lcl}
+\frac{di_k}{dt} &amp;=&amp; \frac{1}{L}u _k -\frac{R}{L} i_k\\
+     &amp;=&amp; \frac{K_e}{\tau_e}u_k -\frac{1}{\tau_e} i_k 
+\end{array}
+\]</span></p>
+<p>The control objective is to ensure <span class="math display">\[i_k^\star =i_{\rm ref}\]</span>, where <span class="math display">\[i^\star\]</span> is the current at steady state and <span class="math display">\[i_{\rm ref}\]</span> is the reference current. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action in the loop between the error compactor and the process (Ogata2010). The control scheme is given by :</p>
+<div class="figure">
+<img src="../img/PMSM/ElecFeedback.png" alt="Electrical dynamics state feedback" />
+<p class="caption">Electrical dynamics state feedback</p>
+</div>
+<p>From the figure one gets :</p>
+<p><span class="math display">\[
+\begin{array}{lcl}
+   \dot{i}_k  &amp; = &amp; -\frac{R}{L} i_k + \frac{1}{L}u_k\\
+   \dot{\varepsilon} &amp; = &amp; i_{\rm ref} - i_k \\
+   u &amp; = &amp; -Ki_k+K_I\varepsilon
+\end{array}
+\]</span></p>
+<p>with <span class="math display">\[\varepsilon\]</span> the output of the integrator.</p>
+<p>The system dynamics can be described by</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+\dot{i_k}\\\dot{\varepsilon}
+\end{bmatrix} = 
+\begin{bmatrix}
+-\frac{R}{L} &amp; 0\\-1 &amp;0
+\end{bmatrix} \begin{bmatrix}
+{i_k}\\{\varepsilon}
+\end{bmatrix}+
+\begin{bmatrix}
+\frac{1}{L}\\0
+\end{bmatrix}u_k+
+\begin{bmatrix}
+0\\1
+\end{bmatrix}i_{k,\rm ref}
+\]</span></p>
+<p>with the control</p>
+<p><span class="math display">\[
+u_k  =  -Ki_k-K_I\varepsilon
+\]</span></p>
+<p>The closed loop system leads to :</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+\dot{i_k}\\\dot{\varepsilon}
+\end{bmatrix} = 
+\left(\begin{bmatrix}
+-\frac{R}{L} &amp; 0\\-1 &amp;0
+\end{bmatrix} -
+\begin{bmatrix}
+\frac{1}{L}\\0
+\end{bmatrix} \begin{bmatrix}K&amp;K_I\end{bmatrix}\begin{bmatrix}i\\\varepsilon\end{bmatrix}\right)+
+\begin{bmatrix}
+0\\1
+\end{bmatrix}i_{k,\rm ref}
+\]</span></p>
+<p>The closed loop dynamics depends on the eigenvalues of the matrix :</p>
+<p><span class="math display">\[
+\left(\begin{bmatrix}
+-\frac{R}{L} &amp; 0\\-1 &amp;0
+\end{bmatrix} -
+\begin{bmatrix}
+\frac{1}{L}\\0
+\end{bmatrix} \begin{bmatrix}K&amp;K_I\end{bmatrix}\right)= 
+\begin{bmatrix}
+-\frac{R+K}{L} &amp; -\frac{K_I}{L}\\-1 &amp;0
+\end{bmatrix}
+\]</span></p>
+<p>One has</p>
+<p><span class="math display">\[
+{\rm eig}\left(
+\begin{bmatrix}
+-\frac{R+K}{L} &amp; -\frac{K_I}{L}\\-1 &amp;0
+\end{bmatrix}\right) = {\rm det}\left(sI-\begin{bmatrix}
+-\frac{R+K}{L} &amp; -\frac{K_I}{L}\\-1 &amp;0
+\end{bmatrix}\right)
+\]</span></p>
+<p>It leads to a characteristic equation</p>
+<p><span class="math display">\[
+P(s) = s^2+\frac{K+R}{L}s -K_I
+\]</span></p>
+<p>to be identified with the classical second order characteristic equation</p>
+<p><span class="math display">\[
+P(s) = p^2+2\zeta\omega_n s +\omega_n^2
+\]</span></p>
+<p>where <span class="math display">\[\omega_n\]</span> is the desired closed loop natural frequency and <span class="math display">\[\zeta\]</span> the damping coefficient.</p>
+<h2 id="mechanical-dynamic">Mechanical Dynamic</h2>
 <div class="figure">
 <img src="../img/PMSM/MecaLoop.png" />
 
 </div>
+<p>Assuming the electrical control has been correctly synthesized with respect to frequency separation principle, which means that the closed loop electrical dynamics is faster than the mechanical desired dynamics, then the mechanical dynamic control synthesis can be designed without considering the closed loop electrical system. The control scheme can be simplified as :</p>
+<div class="figure">
+<img src="../img/PMSM/MecaControl.png" />
+
+</div>
+<p>Considering a motor withour load, the load torque can be reduced to the motor friction modeled as : <span class="math display">\[
+\tau_r = f\Omega
+\]</span> The mechanical dynamic is</p>
+<p><span class="math display">\[
+\begin{array}{lcl}
+\dot{\omega} &amp;=&amp;  \frac{1}{J}\tau_m-\frac{f}{J}\Omega\\
+    &amp;=&amp;  \frac{K_\phi}{J}i-\frac{f}{J}\omega
+\end{array}
+\]</span></p>
+<p>where <span class="math display">\[T_m = K_\phi i\]</span></p>
+<p>The control synthesis is similar than the one proposed for the electrical dynamics with <span class="math display">\[\dot\varepsilon_\omega = \omega_{\rm ref}-\omega\]</span> leading to</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+\dot{\omega}\\\dot{\varepsilon_\omega}
+\end{bmatrix} = 
+\begin{bmatrix}
+-\frac{f}{J} &amp; 0\\-1 &amp;0
+\end{bmatrix} \begin{bmatrix}
+{\omega}\\{\varepsilon_\omega}
+\end{bmatrix}+
+\begin{bmatrix}
+\frac{K_\phi}{J}\\0
+\end{bmatrix}i+
+\begin{bmatrix}
+0\\1
+\end{bmatrix}\omega_{\rm ref}
+\]</span></p>
+<p>with the control</p>
+<p><span class="math display">\[
+i  =  -K_\omega \omega-K_{\omega,I}\varepsilon_\omega
+\]</span></p>
+<p>By analogy, it leads to a characteristic equation</p>
+<p><span class="math display">\[
+P(s) = s^2+\frac{K_\phi K_\omega+f}{L}s -K\phi K_{\omega,I}
+\]</span></p>
+<p>to be identified with the classical second order characteristic equation</p>
+<p><span class="math display">\[
+P(s) = p^2+2\zeta\omega_n s +\omega_n^2 .
+\]</span></p>
+<h2 id="section"></h2>
 <h2 id="references">References</h2>
-<p>(Par29) Park, R.-H. (1929). Two-reaction theory of synchronous machines generalized method of analysis-part I. <em>Transactions of the American Institute of Electrical Engineers</em>, <em>48</em>(3), 716–727. https://doi.org/10.1109/T-AIEE.1929.5055275</p>
+<p>(Bodson1993) Bodson, M., Chiasson, J.-N., Novotnak, R.-T., &amp; Rekowski, R.-B. (1993). High performance nonlinear feedback control of a permanent magnet stepper motor. <em>IEEE Transactions on Control Systems Technology</em>, <em>1</em>(1), 5–14. https://doi.org/10.1109/87.221347</p>
+<p>(Ogata2010) Ogata, K. (2010). Modern Control Engineering. Prentice Hall.</p>
 </body>
 </html>
