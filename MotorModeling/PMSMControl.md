@@ -1,8 +1,6 @@
-
-
 # PMSM Control
 
-[TOC]
+
 
 The page describes  a classical cascaded vector control. Based on the motor frequency separation (i.e. a fast electrical dynamics and a slower mechanical dynamics) the control is divided in two loop :
 
