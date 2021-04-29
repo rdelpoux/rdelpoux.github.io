@@ -37,7 +37,7 @@ The verify correct configuration you can use the test program
 
 ## Motor specifications <a name="motor"></a>
 
-<img src="https://rdelpoux.github.io/img/motorTeknic.png" width="400">
+<img src="../img/motorTeknic.png" width="400">
 
 
 
@@ -72,11 +72,11 @@ The motor is equipped with an incremental encoder. The encoder hat 1000 counts/r
 
 ### Motor connection
 
-<img src="https://rdelpoux.github.io/img/MotorConnection.PNG">
+<img src="../img/MotorConnection.PNG">
 
 The connexion between the motor and the MCLV-V2 is shown below :
 
-<img src="https://rdelpoux.github.io/img/MCLV/MotorConnection.jpg" width="400">
+<img src="../img/MCLV/MotorConnection.jpg" width="400">
 
 
 
@@ -90,11 +90,11 @@ The connexion between the motor and the MCLV-V2 is shown below :
 
 The pinout of the MCLV-2 board with the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) and external Op-AMP configuration is described in its [Information Sheet](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207).
 
-<img src="https://rdelpoux.github.io/img/MCLV/MLCV2.jpg" width="600">
+<img src="../img/MCLV/MLCV2.jpg" width="600">
 
 It is important to verify that External OP_AMP Configuration is plugged :
 
-<img src="https://rdelpoux.github.io/img/MCLV/ExternalOpAmp.jpg" width="200">
+<img src="../img/MCLV/ExternalOpAmp.jpg" width="200">
 
 The table below provide important pinout informations.
 
@@ -125,7 +125,7 @@ The table below provide important pinout informations.
 
 Programmers like PicKit or Snap can directly be connected to the [PIM ATSAME54](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/MA320207) as shown on the picture below.
 
-<img src="https://rdelpoux.github.io/img/MCLV/Programmer.jpg" width="600"/>
+<img src="../img/MCLV/Programmer.jpg" width="600"/>
 
 
 
