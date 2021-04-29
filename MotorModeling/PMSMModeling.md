@@ -1,19 +1,5 @@
 # Permanent magnet synchronous motor modeling
 
-------
-
-[Embedded Motor control](../index.md)
-
-- [PMSM Description](/PMSM.md)
-  - [PMSM Modeling](PMSMModeling.html)
-  - [PMSM Control](PMSMControl.html)
-- Mplab Device Block For Simulink
-- PMSM RPC
-
-------
-
-
-
 ### Classical $abc$ frame
 
 \begin{equation}
@@ -174,10 +160,9 @@ J\frac{d\Omega}{dt} &=& \tau_m -\tau_r \\\\
 
 ------
 
-[PMSM Description](/PMSM.md)
+## Site Map
 
-- [PMSM Modeling](PMSMModeling.html)
-- [PMSM Control](PMSMControl.html)
-
-------
-
+- [PMSM Description](/PMSM.md) / [PMSM Modeling](PMSMModeling.html) - [PMSM Control](PMSMControl.html)
+- [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.md)
+- [Embedded Motor Control](../RCP/PMSMRCP.md)
+- [GUI (Graphical User Interface)](../GUI/GUI.md)

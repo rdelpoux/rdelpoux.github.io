@@ -1,10 +1,8 @@
-# PMSM Control
+#  Control
 
+The page describes  a classical cascaded vector control. Based on the motor frequency separation (i.e. a fast electrical dynamics and a slower mechanical dynamics) the control is divided in two loops:
 
-
-The page describes  a classical cascaded vector control. Based on the motor frequency separation (i.e. a fast electrical dynamics and a slower mechanical dynamics) the control is divided in two loop :
-
-- An inner loop for the electrical dynamic
+- An inner loop for the electrical dynamics
 - An outer loop for the mechanical dynamic
 
 ## $d-q$ model
@@ -228,11 +226,17 @@ $$
 P(s) = p^2+2\zeta\omega_n s +\omega_n^2 .
 $$
 
-## 
-
 ## References
 
 \(Bodson1993) Bodson, M., Chiasson, J.-N., Novotnak, R.-T., & Rekowski, R.-B. (1993). High performance nonlinear feedback control of a permanent magnet stepper motor. *IEEE Transactions on Control Systems Technology*, *1*(1), 5–14. https://doi.org/10.1109/87.221347
 
 \(Ogata2010\) Ogata, K. \(2010\). Modern Control Engineering. Prentice Hall.
 
+------
+
+## Site Map
+
+- [PMSM Description](/PMSM.md) / [PMSM Modeling](PMSMModeling.html) - [PMSM Control](PMSMControl.html)
+- [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.md)
+- [Embedded Motor Control](../RCP/PMSMRCP.md)
+-  [GUI (Graphical User Interface)](../GUI/GUI.md)

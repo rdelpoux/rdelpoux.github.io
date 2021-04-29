@@ -1,18 +1,5 @@
 # PMSM Description
 
-------
-
-- [Embedded Motor control](../index.md)
-  - [PMSM Description](/PMSM.md)
-    - [PMSM Modeling](PMSMModeling.html)
-    - [PMSM Control](PMSMControl.html)
-  - Mplab Device Block For Simulink
-  - PMSM RCP
-
-------
-
-
-
 <img src="../img/motorTeknic.png" alt="PMSM" style="zoom: 33%;" />
 
 
@@ -27,14 +14,19 @@ The system can be described with the following bloc diagram.
 
 <img src="../img/PMSM/PMSMscheme.png" alt="Motor bloc diagram " width=800 />
 
-# 
+## [PMSM Modeling](PMSMModeling.html)
+
+The page describes the dynamical equations of the motor as well as the classically used transformations (Clarke and Park).
+
+## [PMSM Control](PMSMControl.html)
+
+In this page, a classical vector control is proposed for the speed control of the motor.
 
 ------
 
-[PMSM Description](/PMSM.md)
+## Site Map
 
-- [PMSM Modeling](PMSMModeling.html)
-- [PMSM Control](PMSMControl.html)
-
-------
-
+- [PMSM Description](/PMSM.md) / [PMSM Modeling](PMSMModeling.html) - [PMSM Control](PMSMControl.html)
+- [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.md)
+- [Embedded Motor Control](../RCP/PMSMRCP.md)
+- [GUI (Graphical User Interface)](../GUI/GUI.md)
