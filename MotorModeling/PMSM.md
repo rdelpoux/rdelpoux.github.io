@@ -5,7 +5,7 @@
 [PMSM Description](/PMSM.md)
 
 - [PMSM Modeling](PMSMModeling.html)
-- [PMSM Control](PMSMControl.md)
+- [PMSM Control](PMSMControl.html)
 
 ------
 
@@ -32,7 +32,7 @@ The system can be described with the following bloc diagram.
 [PMSM Description](/PMSM.md)
 
 - [PMSM Modeling](PMSMModeling.html)
-- [PMSM Control](PMSMControl.md)
+- [PMSM Control](PMSMControl.html)
 
 ------
 

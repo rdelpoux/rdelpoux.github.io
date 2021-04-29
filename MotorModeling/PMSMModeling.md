@@ -1,5 +1,16 @@
 # Permanent magnet synchronous motor modeling
 
+------
+
+[PMSM Description](/PMSM.md)
+
+- [PMSM Modeling](PMSMModeling.html)
+- [PMSM Control](PMSMControl.html)
+
+------
+
+
+
 ### Classical $abc$ frame
 
 \begin{equation}
@@ -32,7 +43,7 @@ where  $i_{abc} = \left[\begin{matrix}i_a & i_b & i_c\end{matrix}\right]^\interc
 
 ### Clarke and Parc transformations
 
-![Clarke-Parc Transformations](/home/rdelpoux/Documents/Travail/Recherche/Moteurs/NotePMSM/VersionHTML/img/animatedTransfo.gif)
+![Clarke-Parc Transformations](../img/PMSM/animatedTransfo.gif)
 
 
 
@@ -151,3 +162,13 @@ J\frac{d\Omega}{dt} &=& \tau_m -\tau_r \\\\
 ## References :
 
 (Par29) Park, R.-H. (1929). Two-reaction theory of synchronous machines generalized method of analysis-part I. *Transactions of the American Institute of Electrical Engineers*, *48*(3), 716–727. https://doi.org/10.1109/T-AIEE.1929.5055275
+
+------
+
+[PMSM Description](/PMSM.md)
+
+- [PMSM Modeling](PMSMModeling.html)
+- [PMSM Control](PMSMControl.html)
+
+------
+
