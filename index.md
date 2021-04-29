@@ -9,7 +9,7 @@
 
 ### Introduction
 
-This website provide keys for motor Rapid Control Prototyping. Originally intended to 5th year students in the [electrical engineering department](http://ge.insa-lyon.fr/) of [INSA Lyon](http://www.insa-lyon.fr/) for the [CCSA](http://ge-option5a.insa-lyon.fr/content/ccsa-commande-de-convertisseurs-et-de-systemes-dactionnement) option, the objective of these pages is to propose an initiation to the programming environment toolbox [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892). It allows targetting Microchip Microcontrollers directly from the Matlab-Simulink environnement. 
+This website provides keys for motor Rapid Control Prototyping of PMSM (Permanent Magnet Synchronous Motor). Originally intended to 5th year students in the [electrical engineering department](http://ge.insa-lyon.fr/) of [INSA Lyon](http://www.insa-lyon.fr/) for the [CCSA](http://ge-option5a.insa-lyon.fr/content/ccsa-commande-de-convertisseurs-et-de-systemes-dactionnement) option, the objective of these pages is to propose an initiation to the programming environment toolbox [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892). It allows targeting Microchip Microcontrollers directly from the Matlab-Simulink environment. 
 
 Developing embedded code for microcontrollers requires skills that are out of scope of the curriculum of control system engineers which is typically limited to high level tools like Matlab/Simulink and Rapid Control Prototyping tools like dSPACE or Speedgoat. This task is often left to embedded system engineers who are specialists of hardware architecture but have little knowledge in control theory. It is clear that there is a lack of engineers able to deal with the full process from control design to hardware implementation. 
 
@@ -42,6 +42,8 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://www.ma
 
 ## Content
 
+- ### [PMSM Modelling and control](/MotorModeling/PMSM.md)
+
 - ### [Mplab for Simulink](/MplabForSimulink/MplabForSimulink.md)
 
 - ### [Getting started](/GettingStarted/GettingStarted.md)
@@ -49,8 +51,6 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://www.ma
 - ### [Block configuration for Motor Control](/BlockconfigurationforMotorControl/BlockconfigurationforMotorControl.md) 
 
 - ### [GUI (Graphical User Interface)](/GUI/GUI.md)
-
-- [Motor Modeling](/MotorModeling/modeling.html)
 
 ## License
 
