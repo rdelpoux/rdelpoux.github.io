@@ -6,6 +6,7 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="pandoc.css" type="text/css" />
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
 </head>
 <body>
@@ -63,7 +64,7 @@ L \frac{di_q}{dt} &amp; = &amp; u_q-R i_q
      &amp;=&amp; \frac{K_e}{\tau_e}u_k -\frac{1}{\tau_e} i_k 
 \end{array}
 \]</span></p>
-<p>The control objective is to ensure <span class="math display">\[i_k^\star =i_{\rm ref}\]</span>, where <span class="math display">\[i^\star\]</span> is the current at steady state and <span class="math display">\[i_{\rm ref}\]</span> is the reference current. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action in the loop between the error compactor and the process (Ogata2010). The control scheme is given by :</p>
+<p>The control objective is to ensure <span class="math inline">\(i_k^\star =i_{\rm ref}\)</span>, where <span class="math inline">\(i^\star\)</span> is the current at steady state and <span class="math display">\[i_{\rm ref}\]</span> is the reference current. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action in the loop between the error compactor and the process (Ogata2010). The control scheme is given by :</p>
 <div class="figure">
 <img src="../img/PMSM/ElecFeedback.png" alt="Electrical dynamics state feedback" />
 <p class="caption">Electrical dynamics state feedback</p>
@@ -76,7 +77,7 @@ L \frac{di_q}{dt} &amp; = &amp; u_q-R i_q
    u &amp; = &amp; -Ki_k+K_I\varepsilon
 \end{array}
 \]</span></p>
-<p>with <span class="math display">\[\varepsilon\]</span> the output of the integrator.</p>
+<p>with <span class="math inline">\(\varepsilon\)</span> the output of the integrator.</p>
 <p>The system dynamics can be described by</p>
 <p><span class="math display">\[
 \begin{bmatrix}
@@ -142,7 +143,7 @@ P(s) = s^2+\frac{K+R}{L}s -K_I
 <p><span class="math display">\[
 P(s) = p^2+2\zeta\omega_n s +\omega_n^2
 \]</span></p>
-<p>where <span class="math display">\[\omega_n\]</span> is the desired closed loop natural frequency and <span class="math display">\[\zeta\]</span> the damping coefficient.</p>
+<p>where <span class="math inline">\(\omega_n\)</span> is the desired closed loop natural frequency and <span class="math inline">\(\zeta\)</span> the damping coefficient.</p>
 <h2 id="mechanical-dynamic">Mechanical Dynamic</h2>
 <div class="figure">
 <img src="../img/PMSM/MecaLoop.png" />
@@ -153,7 +154,7 @@ P(s) = p^2+2\zeta\omega_n s +\omega_n^2
 <img src="../img/PMSM/MecaControl.png" />
 
 </div>
-<p>Considering a motor withour load, the load torque can be reduced to the motor friction modeled as : <span class="math display">\[
+<p>Considering a motor without load, the load torque can be reduced to the motor friction modeled as : <span class="math display">\[
 \tau_r = f\Omega
 \]</span> The mechanical dynamic is</p>
 <p><span class="math display">\[
@@ -162,8 +163,8 @@ P(s) = p^2+2\zeta\omega_n s +\omega_n^2
     &amp;=&amp;  \frac{K_\phi}{J}i-\frac{f}{J}\omega
 \end{array}
 \]</span></p>
-<p>where <span class="math display">\[T_m = K_\phi i\]</span></p>
-<p>The control synthesis is similar than the one proposed for the electrical dynamics with <span class="math display">\[\dot\varepsilon_\omega = \omega_{\rm ref}-\omega\]</span> leading to</p>
+<p>where <span class="math inline">\(T_m = K_\phi i\)</span></p>
+<p>The control synthesis is similar than the one proposed for the electrical dynamics with <span class="math inline">\(\dot\varepsilon_\omega = \omega_{\rm ref}-\omega\)</span> leading to</p>
 <p><span class="math display">\[
 \begin{bmatrix}
 \dot{\omega}\\\dot{\varepsilon_\omega}

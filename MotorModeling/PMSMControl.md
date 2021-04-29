@@ -69,7 +69,7 @@ $$
 \end{array}
 $$
 
-The control objective is to ensure $$i_k^\star =i_{\rm ref}$$, where $$i^\star$$ is the current at steady state and $$i_{\rm ref}$$ is the reference current. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action in the loop between the error compactor and the process \(Ogata2010\). The control scheme is given by :
+The control objective is to ensure $i_k^\star =i_{\rm ref}$, where $i^\star$ is the current at steady state and $$i_{\rm ref}$$ is the reference current. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action in the loop between the error compactor and the process \(Ogata2010\). The control scheme is given by :
 
 ![Electrical dynamics state feedback](../img/PMSM/ElecFeedback.png)
 
@@ -83,7 +83,7 @@ $$
 \end{array}
 $$
 
-with $$\varepsilon$$ the output of the integrator.
+with $\varepsilon$ the output of the integrator.
 
 The system dynamics can be described by
 
@@ -164,7 +164,7 @@ $$
 P(s) = p^2+2\zeta\omega_n s +\omega_n^2
 $$
 
-where $$\omega_n$$ is the desired closed loop natural frequency and $$\zeta$$ the damping coefficient.
+where $\omega_n$ is the desired closed loop natural frequency and $\zeta$ the damping coefficient.
 
 ## Mechanical Dynamic
 
@@ -174,7 +174,7 @@ Assuming the electrical control has been correctly synthesized with respect to f
 
 ![](../img/PMSM/MecaControl.png)
 
-Considering a motor withour load, the load torque can be reduced to the motor friction modeled as : 
+Considering a motor without load, the load torque can be reduced to the motor friction modeled as : 
 $$
 \tau_r = f\Omega
 $$
@@ -187,9 +187,9 @@ $$
 \end{array}
 $$
 
-where $$T_m = K_\phi i$$
+where $T_m = K_\phi i$
 
-The control synthesis is similar than the one proposed for the electrical dynamics with $$\dot\varepsilon_\omega = \omega_{\rm ref}-\omega$$ leading to
+The control synthesis is similar than the one proposed for the electrical dynamics with $\dot\varepsilon_\omega = \omega_{\rm ref}-\omega$ leading to
 
 $$
 \begin{bmatrix}
