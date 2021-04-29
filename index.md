@@ -9,7 +9,7 @@
 
 ### Introduction
 
-This website provides keys for motor Rapid Control Prototyping of PMSM (Permanent Magnet Synchronous Motor). Originally intended to 5th year students in the [electrical engineering department](http://ge.insa-lyon.fr/) of [INSA Lyon](http://www.insa-lyon.fr/) for the [CCSA](http://ge-option5a.insa-lyon.fr/content/ccsa-commande-de-convertisseurs-et-de-systemes-dactionnement) option, the objective of these pages is to propose an initiation to the programming environment toolbox [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892). It allows targeting Microchip Microcontrollers directly from the Matlab-Simulink environment. 
+This website provides keys for motor Rapid Control Prototyping of synchronous motor. Originally intended to 5th year students in the [electrical engineering department](http://ge.insa-lyon.fr/) of [INSA Lyon](http://www.insa-lyon.fr/) for the [CCSA](http://ge-option5a.insa-lyon.fr/content/ccsa-commande-de-convertisseurs-et-de-systemes-dactionnement) option, the objective of these pages is to propose an initiation to the programming environment toolbox [MPLAB Device Blocks for Simulink](https://www.mathworks.com/matlabcentral/fileexchange/71892). It allows targeting Microchip Microcontrollers directly from the Matlab-Simulink environment. 
 
 Developing embedded code for microcontrollers requires skills that are out of scope of the curriculum of control system engineers which is typically limited to high level tools like Matlab/Simulink and Rapid Control Prototyping tools like dSPACE or Speedgoat. This task is often left to embedded system engineers who are specialists of hardware architecture but have little knowledge in control theory. It is clear that there is a lack of engineers able to deal with the full process from control design to hardware implementation. 
 
@@ -28,7 +28,7 @@ This work is realized in collaboration between [ctrl+elec](http://www.ctrl-elec.
 <img src="https://rdelpoux.github.io/img/logo.png" width="300">
 
 
-The platform [ctrl+elec](http://www.ctrl-elec.fr/en/ctrl-elec/) is positioned between the disciplines of power  electronics on the one hand, and control theory on the other hand: The  objective is to take advantage of a fine knowledge of power electronics  systems and of an expertise on some control theory tools, identified as  relevant for these applications. This platform is related to the  research work of the group [Automatique pour l’Electronique de puissance](http://www.ampere-lab.fr/spip.php?article921) of [Ampere UMR CNRS 5005](http://www.ampere-lab.fr/)
+The platform [ctrl+elec](http://www.ctrl-elec.fr/en/ctrl-elec/) is positioned between the disciplines of power electronics on the one hand, and control theory on the other hand: The  objective is to take advantage of a fine knowledge of power electronics  systems and of an expertise on some control theory tools, identified as  relevant for these applications. This platform is related to the  research work of the group [Automatique pour l’Electronique de puissance](http://www.ampere-lab.fr/spip.php?article921) of [Ampere UMR CNRS 5005](http://www.ampere-lab.fr/)
 
 
 
@@ -46,9 +46,7 @@ For more informations refer to [MPLAB Device Blocks for Simulink](https://www.ma
 
 - ### [Mplab for Simulink](/MplabForSimulink/MplabForSimulink.md)
 
-- ### [Getting started](/GettingStarted/GettingStarted.md)
-
-- ### [Block configuration for Motor Control](/BlockconfigurationforMotorControl/BlockconfigurationforMotorControl.md) 
+- ### [Embedded Motor Control](/RCP/PMSMRCP.md)
 
 - ### [GUI (Graphical User Interface)](/GUI/GUI.md)
 

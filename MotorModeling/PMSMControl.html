@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+<h1 id="pmsm-control">PMSM Control</h1>
+<p>The page describes a classical cascaded vector control. Based on the motor frequency separation (i.e. a fast electrical dynamics and a slower mechanical dynamics) the control is divided in two loop :</p>
+<ul>
+<li>An inner loop for the electrical dynamic</li>
+<li>An outer loop for the mechanical dynamic</li>
+</ul>
+<h2 id="d-q-model"><span class="math inline">\(d-q\)</span> model</h2>
+<p>The model of the motor in the <span class="math inline">\(dq\)</span> frame is :</p>
+<span class="math display">\[\begin{equation}
+
+\label{eq:modeledq}
+
+\left\{\begin{array}{rcl}
+
+L \frac{di_d}{dt} &amp; = &amp; v_d-R i_d + Lp\Omega i_q\\\\
+
+L \frac{di_q}{dt} &amp; = &amp; v_q-R i_q - Lp\Omega i_d -\phi_f  p\Omega\\\\
+
+J\frac{d\Omega}{dt} &amp;=&amp; \tau_m -\tau_r \\\\
+
+{\frac{d\theta}{dt}} &amp;=&amp; \Omega\\
+
+\end{array}\right.
+
+\end{equation}\]</span>
+<span class="math display">\[\begin{equation}
+
+\tau_m = p\frac{3}{2}\phi_f  i_q
+
+\end{equation}\]</span>
+<h2 id="electrical-dynamics">Electrical Dynamics</h2>
+<div class="figure">
+<img src="../img/PMSM/ElecLoop.png" />
+
+</div>
+<h2 id="mechanical-dynamics">Mechanical Dynamics</h2>
+<div class="figure">
+<img src="../img/PMSM/MecaLoop.png" />
+
+</div>
+</body>
+</html>

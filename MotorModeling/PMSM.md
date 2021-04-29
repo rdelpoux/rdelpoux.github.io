@@ -2,10 +2,12 @@
 
 ------
 
-[PMSM Description](/PMSM.md)
-
-- [PMSM Modeling](PMSMModeling.html)
-- [PMSM Control](PMSMControl.html)
+- [Embedded Motor control](../index.md)
+  - [PMSM Description](/PMSM.md)
+    - [PMSM Modeling](PMSMModeling.html)
+    - [PMSM Control](PMSMControl.html)
+  - Mplab Device Block For Simulink
+  - PMSM RCP
 
 ------
 

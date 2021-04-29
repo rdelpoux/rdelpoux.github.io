@@ -2,10 +2,13 @@
 
 ------
 
-[PMSM Description](/PMSM.md)
+[Embedded Motor control](../index.md)
 
-- [PMSM Modeling](PMSMModeling.html)
-- [PMSM Control](PMSMControl.html)
+- [PMSM Description](/PMSM.md)
+  - [PMSM Modeling](PMSMModeling.html)
+  - [PMSM Control](PMSMControl.html)
+- Mplab Device Block For Simulink
+- PMSM RPC
 
 ------
 
@@ -40,6 +43,8 @@ where  $i_{abc} = \left[\begin{matrix}i_a & i_b & i_c\end{matrix}\right]^\interc
 \tau_m = -p\phi_f  \left[i_a\sin(p\theta) + i_b\sin\left(p\theta-\frac{2\pi}{3}\right) + i_c\sin\left(p\theta+\frac{2\pi}{3}\right)\right]
 
 \end{equation}
+
+![](../img/PMSM/ModelABC.png)
 
 ### Clarke and Parc transformations
 
@@ -89,11 +94,13 @@ J\frac{d\Omega}{dt} &=& \tau_m -\tau_r \\\\
 
 \end{equation}
 
+![](../img/PMSM/Modelalbe.png)
+
 #### Park transformation : $d-q$ rotating frame 
 
 In the previous model, votages and currents varies at high frequency (p times the rotational frequency). To avoid sinus terms Park transformation is used (Par29).
 
-La transformée de Park est obtenue à partir de la matrice de rotation $R(\theta)$ liant les axes $\alpha\beta$ aux axes $dq$. On a
+The Park transform is a rotation matrix $R(\theta)$ from $\alpha\beta$ axes to $dq$ axes. One as
 
 \begin{equation}
 
@@ -131,7 +138,7 @@ x_{\alpha\beta} = R(\theta)^{-1} x_{dq} =\left[
 
 \end{equation}
 
-Le modèle \eqref{eq:modeleab} dans le repère $dq$ s'écrit
+The model in the $dq$ frame is :
 
 \begin{equation}
 
@@ -157,7 +164,9 @@ J\frac{d\Omega}{dt} &=& \tau_m -\tau_r \\\\
 
 \end{equation}
 
+![](../img/PMSM/Modeldq.png)
 
+![](../img/PMSM/BlocDiagramdq.png)
 
 ## References :
 
