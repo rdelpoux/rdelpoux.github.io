@@ -4,11 +4,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
+  <meta name="author" content="Romain DELPOUX" />
+  <title>PMSM control</title>
   <style type="text/css">code{white-space: pre;}</style>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
 </head>
 <body>
+<div id="header">
+<h1 class="title">PMSM control</h1>
+<h2 class="author">Romain DELPOUX</h2>
+</div>
 <h1 id="pmsm-control">PMSM Control</h1>
 <p>The page describes a classical cascaded vector control. Based on the motor frequency separation (i.e. a fast electrical dynamics and a slower mechanical dynamics) the control is divided in two loop :</p>
 <ul>
@@ -17,37 +22,50 @@
 </ul>
 <h2 id="d-q-model"><span class="math inline">\(d-q\)</span> model</h2>
 <p>The model of the motor in the <span class="math inline">\(dq\)</span> frame is :</p>
-<span class="math display">\[\begin{equation}
-
-\label{eq:modeledq}
-
+<p><span class="math display">\[
 \left\{\begin{array}{rcl}
-
 L \frac{di_d}{dt} &amp; = &amp; v_d-R i_d + Lp\Omega i_q\\\\
-
 L \frac{di_q}{dt} &amp; = &amp; v_q-R i_q - Lp\Omega i_d -\phi_f  p\Omega\\\\
-
 J\frac{d\Omega}{dt} &amp;=&amp; \tau_m -\tau_r \\\\
-
 {\frac{d\theta}{dt}} &amp;=&amp; \Omega\\
-
 \end{array}\right.
-
-\end{equation}\]</span>
-<span class="math display">\[\begin{equation}
-
+\]</span></p>
+<p><span class="math display">\[
 \tau_m = p\frac{3}{2}\phi_f  i_q
-
-\end{equation}\]</span>
+\]</span></p>
 <h2 id="electrical-dynamics">Electrical Dynamics</h2>
 <div class="figure">
 <img src="../img/PMSM/ElecLoop.png" />
 
 </div>
+<p>Consider the electrical equations : <span class="math display">\[
+\left\{
+\begin{array}{rcl}
+L \frac{di_d}{dt} &amp; = &amp; v_d-R i_d + Lp\Omega i_q\\\\
+L \frac{di_q}{dt} &amp; = &amp; v_q-R i_q - Lp\Omega i_d -\phi_f  p\Omega
+\end{array}\right.
+\]</span></p>
+<h3 id="feedback-linearization">Feedback linearization</h3>
+<p>The model <span class="math inline">\(d-q\)</span> is still non-linear. Based on this model, choosing <span class="math inline">\(v_d\)</span> and <span class="math inline">\(v_q\)</span> as : <span class="math display">\[
+\left\{
+\begin{array}{lcl}
+v_d &amp;=&amp; u_d + Lp\Omega i_q\\
+v_q &amp;=&amp; u_q + Lp\Omega i_d+\phi_f p\Omega\\
+\end{array}
+\right.
+\]</span> One has : <span class="math display">\[
+\left\{
+\begin{array}{rcl}
+L \frac{di_d}{dt} &amp; = &amp; u_d-R i_d\\\\
+L \frac{di_q}{dt} &amp; = &amp; u_q-R i_q
+\end{array}\right.
+\]</span> whether two decoupled electrical equations. Each current can thus be controlled independently. Therefore, linear control techniques can be used.</p>
 <h2 id="mechanical-dynamics">Mechanical Dynamics</h2>
 <div class="figure">
 <img src="../img/PMSM/MecaLoop.png" />
 
 </div>
+<h2 id="references">References</h2>
+<p>(Par29) Park, R.-H. (1929). Two-reaction theory of synchronous machines generalized method of analysis-part I. <em>Transactions of the American Institute of Electrical Engineers</em>, <em>48</em>(3), 716–727. https://doi.org/10.1109/T-AIEE.1929.5055275</p>
 </body>
 </html>
