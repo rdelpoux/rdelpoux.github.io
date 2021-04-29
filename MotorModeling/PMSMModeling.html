@@ -11,10 +11,13 @@
 <body>
 <h1 id="permanent-magnet-synchronous-motor-modeling">Permanent magnet synchronous motor modeling</h1>
 <hr />
-<p><a href="/PMSM.md">PMSM Description</a></p>
+<p><a href="../index.md">Embedded Motor control</a></p>
 <ul>
+<li><a href="/PMSM.md">PMSM Description</a></li>
 <li><a href="PMSMModeling.html">PMSM Modeling</a></li>
 <li><a href="PMSMControl.html">PMSM Control</a></li>
+<li>Mplab Device Block For Simulink</li>
+<li>PMSM RPC</li>
 </ul>
 <hr />
 <h3 id="classical-abc-frame">Classical <span class="math inline">\(abc\)</span> frame</h3>
@@ -43,6 +46,10 @@ J\frac{d\Omega}{dt} &amp;=&amp; \tau_m-\tau_l \\\\
 \tau_m = -p\phi_f  \left[i_a\sin(p\theta) + i_b\sin\left(p\theta-\frac{2\pi}{3}\right) + i_c\sin\left(p\theta+\frac{2\pi}{3}\right)\right]
 
 \end{equation}\]</span>
+<div class="figure">
+<img src="../img/PMSM/ModelABC.png" />
+
+</div>
 <h3 id="clarke-and-parc-transformations">Clarke and Parc transformations</h3>
 <div class="figure">
 <img src="../img/PMSM/animatedTransfo.gif" alt="Clarke-Parc Transformations" />
@@ -82,9 +89,13 @@ J\frac{d\Omega}{dt} &amp;=&amp; \tau_m -\tau_r \\\\
 \tau_m = p\frac{3}{2}\phi_f  \left[-i_\alpha\sin(p\theta) + i_\beta\cos(p\theta)\right]
 
 \end{equation}\]</span>
+<div class="figure">
+<img src="../img/PMSM/Modelalbe.png" />
+
+</div>
 <h4 id="park-transformation-d-q-rotating-frame">Park transformation : <span class="math inline">\(d-q\)</span> rotating frame</h4>
 <p>In the previous model, votages and currents varies at high frequency (p times the rotational frequency). To avoid sinus terms Park transformation is used (Par29).</p>
-<p>La transformée de Park est obtenue à partir de la matrice de rotation <span class="math inline">\(R(\theta)\)</span> liant les axes <span class="math inline">\(\alpha\beta\)</span> aux axes <span class="math inline">\(dq\)</span>. On a</p>
+<p>The Park transform is a rotation matrix <span class="math inline">\(R(\theta)\)</span> from <span class="math inline">\(\alpha\beta\)</span> axes to <span class="math inline">\(dq\)</span> axes. One as</p>
 <span class="math display">\[\begin{equation}
 
 \label{eq:park}
@@ -119,7 +130,7 @@ x_{\alpha\beta} = R(\theta)^{-1} x_{dq} =\left[
 ​   \right]x_{dq}
 
 \end{equation}\]</span>
-<p>Le modèle  dans le repère <span class="math inline">\(dq\)</span> s'écrit</p>
+<p>The model in the <span class="math inline">\(dq\)</span> frame is :</p>
 <span class="math display">\[\begin{equation}
 
 \label{eq:modeledq}
@@ -142,6 +153,14 @@ J\frac{d\Omega}{dt} &amp;=&amp; \tau_m -\tau_r \\\\
 \tau_m = p\frac{3}{2}\phi_f  i_q
 
 \end{equation}\]</span>
+<div class="figure">
+<img src="../img/PMSM/Modeldq.png" />
+
+</div>
+<div class="figure">
+<img src="../img/PMSM/BlocDiagramdq.png" />
+
+</div>
 <h2 id="references">References :</h2>
 <p>(Par29) Park, R.-H. (1929). Two-reaction theory of synchronous machines generalized method of analysis-part I. <em>Transactions of the American Institute of Electrical Engineers</em>, <em>48</em>(3), 716–727. https://doi.org/10.1109/T-AIEE.1929.5055275</p>
 <hr />
