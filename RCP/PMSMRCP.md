@@ -2,9 +2,15 @@
 
 
 
-- ### [Getting started](/GettingStarted/GettingStarted.md)
+
+
+- ### [Getting started](/GettingStarted)
+
+  ### 
 
 - ### [Block configuration for Motor Control](/BlockconfigurationforMotorControl/BlockconfigurationforMotorControl.md) 
 
-- ### Simulink models
+- ### Simulations Simulink models
+
+- ### Embedded Simulink models
 
