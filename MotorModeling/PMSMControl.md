@@ -69,7 +69,7 @@ $$
 \end{array}
 $$
 
-The control objective is to ensure $i_k^\star =i_{\rm ref}$, where $i^\star$ is the current at steady state and $$i_{\rm ref}$$ is the reference current. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action in the loop between the error compactor and the process \(Ogata2010\). The control scheme is given by :
+The control objective is to ensure $i_k^\star =i_{\rm ref}$, where $i^\star$ is the current at steady state and $i_{\rm ref}$ is the reference current. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action in the loop between the error compactor and the process \(Ogata2010\). The control scheme is given by :
 
 ![Electrical dynamics state feedback](../img/PMSM/ElecFeedback.png)
 
