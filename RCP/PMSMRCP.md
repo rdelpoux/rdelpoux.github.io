@@ -10,9 +10,9 @@ It describes the the hardware and software requirement for this control strategi
 
 The Simulink model configuration is detailed in this page. The different inputs/outputs blocs used for motor control are described.
 
-## Simulation Simulink models
+## [Simulation Simulink models](/Simulation.md)
 
 For a successful experimental speed motor control, the control strategy was initially apllied in simulation. A simulation of the entire system is proposed in the section.
 
-## Embedded Simulink models
+## [Embedded Simulink models](/EmbeddedModels.md)
 
