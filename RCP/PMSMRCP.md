@@ -16,3 +16,4 @@ For a successful experimental speed motor control, the control strategy was init
 
 ## [Embedded Simulink models](/EmbeddedModels.md)
 
+Finally, the experimental files for this example can be found here! 
