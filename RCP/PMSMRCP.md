@@ -1,4 +1,4 @@
- # PMSM Rapid Control Prototyping (RCP)
+# PMSM Rapid Control Prototyping (RCP)
 
 Here are described the steps in order to apply the control law described on page [PMSM control](../MotorModeling/PMSMControl.html)
 
