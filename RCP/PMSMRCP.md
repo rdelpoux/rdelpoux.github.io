@@ -2,9 +2,9 @@
 
 Here are described the steps in order to apply the control law described on page [PMSM control](../MotorModeling/PMSMControl.html)
 
-## [Getting started](/GettingStarted)
+## [Getting started](/GettingStarted.md)
 
-It describes the the hardware and software requirement for this control strategie. The motor and its parameters are presented.
+It describes the the hardware and software requirement for this control strategy. The motor and its parameters are presented.
 
 ## [Block configuration for Motor Control](/BlockconfigurationforMotorControl.md) 
 
@@ -17,3 +17,4 @@ For a successful experimental speed motor control, the control strategy was init
 ## [Embedded Simulink models](/EmbeddedModels.md)
 
 Finally, the experimental files for this example can be found here! 
+
