@@ -43,7 +43,7 @@ The model $d-q$ is still non-linear. Based on this model, choosing $v_d$ and $v_
 $$
 \left\{
 \begin{array}{lcl}
-v_d &=& u_d + Lp\Omega i_q\\
+v_d &=& u_d - Lp\Omega i_q\\
 v_q &=& u_q + Lp\Omega i_d+\phi_f p\Omega\\
 \end{array}
 \right.
