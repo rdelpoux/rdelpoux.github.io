@@ -60,7 +60,7 @@ whether two decoupled electrical equations. Each current can thus be controlled 
 
 **Feedback control with integral action**
 
-The for each current electrical $i_k;k\in{d,q}, the dynamic is given by
+The for each electrical current $i_k;k\in{d,q}$, the dynamic is given by
 
 $$
 \begin{array}{lcl}
