@@ -163,7 +163,7 @@ J\frac{d\Omega}{dt} &=& \tau_m -\tau_r \\\\
 ## Site Map
 
 - [PMSM Description](PMSM.html) / [PMSM Modeling](PMSMModeling.html) - [PMSM Control](PMSMControl.html)
-- [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.md)
-- [Embedded Motor Control](../RCP/PMSMRCP.md)
-- [GUI (Graphical User Interface)](../GUI/GUI.md)
+- [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.html)
+- [Embedded Motor Control](../RCP/PMSMRCP.html)
+- [GUI (Graphical User Interface)](../GUI/GUI.html)
 

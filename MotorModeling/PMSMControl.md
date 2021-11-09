@@ -161,7 +161,7 @@ $$
 to be identified with the classical second order characteristic equation
 
 $$
-P(s) = p^2+2\zeta\omega_n s +\omega_n^2
+P(s) = s^2+2\zeta\omega_n s +\omega_n^2
 $$
 
 where $\omega_n$ is the desired closed loop natural frequency and $\zeta$ the damping coefficient.
@@ -223,7 +223,7 @@ $$
 to be identified with the classical second order characteristic equation
 
 $$
-P(s) = p^2+2\zeta\omega_n s +\omega_n^2 .
+P(s) = s^2+2\zeta\omega_n s +\omega_n^2 .
 $$
 
 ## References
@@ -236,7 +236,7 @@ $$
 
 ## Site Map
 
-- [PMSM Description](PMSM.md) / [PMSM Modeling](PMSMModeling.html) - [PMSM Control](PMSMControl.html)
-- [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.md)
-- [Embedded Motor Control](../RCP/PMSMRCP.md)
--  [GUI (Graphical User Interface)](../GUI/GUI.md)
+- [PMSM Description](PMSM.html) / [PMSM Modeling](PMSMModeling.html) - [PMSM Control](PMSMControl.html)
+- [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.html)
+- [Embedded Motor Control](../RCP/PMSMRCP.html)
+-  [GUI (Graphical User Interface)](../GUI/GUI.html)
