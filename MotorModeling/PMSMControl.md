@@ -79,7 +79,7 @@ $$
 \begin{array}{lcl}
    \dot{i}_k  & = & -\frac{R}{L} i_k + \frac{1}{L}u_k\\
    \dot{\varepsilon} & = & i_{\rm ref} - i_k \\
-   u & = & -Ki_k+K_I\varepsilon
+   u & = & -Ki_k-K_I\varepsilon
 \end{array}
 $$
 
@@ -147,15 +147,15 @@ $$
 {\rm eig}\left(
 \begin{bmatrix}
 -\frac{R+K}{L} & -\frac{K_I}{L}\\-1 &0
-\end{bmatrix}\right) = {\rm det}\left(sI-\begin{bmatrix}
+\end{bmatrix}\right) \Leftrightarrow  {\rm det}\left(sI-\begin{bmatrix}
 -\frac{R+K}{L} & -\frac{K_I}{L}\\-1 &0
-\end{bmatrix}\right)
+\end{bmatrix}\right)=0
 $$
 
 It leads to a characteristic equation
 
 $$
-P(s) = s^2+\frac{K+R}{L}s -K_I
+P(s) = s^2+\frac{K+R}{L}s -\frac{K_I}{L}
 $$
 
 to be identified with the classical second order characteristic equation
@@ -183,11 +183,11 @@ The mechanical dynamic is
 $$
 \begin{array}{lcl}
 \dot{\omega} &=&  \frac{1}{J}\tau_m-\frac{f}{J}\Omega\\
-    &=&  \frac{K_\phi}{J}i-\frac{f}{J}\omega
+    &=&  \frac{K_\phi}{J}i_q-\frac{f}{J}\omega
 \end{array}
 $$
 
-where $T_m = K_\phi i$
+where $T_m = K_\phi i=\frac{3}{2}p\phi_f$
 
 The control synthesis is similar than the one proposed for the electrical dynamics with $\dot\varepsilon_\omega = \omega_{\rm ref}-\omega$ leading to
 
@@ -202,7 +202,7 @@ $$
 \end{bmatrix}+
 \begin{bmatrix}
 \frac{K_\phi}{J}\\0
-\end{bmatrix}i+
+\end{bmatrix}i_q+
 \begin{bmatrix}
 0\\1
 \end{bmatrix}\omega_{\rm ref}
@@ -211,13 +211,13 @@ $$
 with the control
 
 $$
-i  =  -K_\omega \omega-K_{\omega,I}\varepsilon_\omega
+i_q  =  -K_\omega \omega-K_{\omega,I}\varepsilon_\omega
 $$
 
 By analogy, it leads to a characteristic equation
 
 $$
-P(s) = s^2+\frac{K_\phi K_\omega+f}{L}s -K\phi K_{\omega,I}
+P(s) = s^2+\frac{K_\phi K_\omega+f}{J}s -\frac{K\phi K_{\omega,I}}{J}
 $$
 
 to be identified with the classical second order characteristic equation

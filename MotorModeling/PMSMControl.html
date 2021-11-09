@@ -57,7 +57,7 @@ L \frac{di_q}{dt} &amp; = &amp; u_q-R i_q
 \end{array}\right.
 \]</span> whether two decoupled electrical equations. Each current can thus be controlled independently. Therefore, linear control techniques can be used.</p>
 <p><strong>Feedback control with integral action</strong></p>
-<p>The for each current electrical $i_k;k, the dynamic is given by</p>
+<p>The for each electrical current <span class="math inline">\(i_k;k\in{d,q}\)</span>, the dynamic is given by</p>
 <p><span class="math display">\[
 \begin{array}{lcl}
 \frac{di_k}{dt} &amp;=&amp; \frac{1}{L}u _k -\frac{R}{L} i_k\\
@@ -74,7 +74,7 @@ L \frac{di_q}{dt} &amp; = &amp; u_q-R i_q
 \begin{array}{lcl}
    \dot{i}_k  &amp; = &amp; -\frac{R}{L} i_k + \frac{1}{L}u_k\\
    \dot{\varepsilon} &amp; = &amp; i_{\rm ref} - i_k \\
-   u &amp; = &amp; -Ki_k+K_I\varepsilon
+   u &amp; = &amp; -Ki_k-K_I\varepsilon
 \end{array}
 \]</span></p>
 <p>with <span class="math inline">\(\varepsilon\)</span> the output of the integrator.</p>
@@ -131,13 +131,13 @@ u_k  =  -Ki_k-K_I\varepsilon
 {\rm eig}\left(
 \begin{bmatrix}
 -\frac{R+K}{L} &amp; -\frac{K_I}{L}\\-1 &amp;0
-\end{bmatrix}\right) = {\rm det}\left(sI-\begin{bmatrix}
+\end{bmatrix}\right) \Leftrightarrow  {\rm det}\left(sI-\begin{bmatrix}
 -\frac{R+K}{L} &amp; -\frac{K_I}{L}\\-1 &amp;0
-\end{bmatrix}\right)
+\end{bmatrix}\right)=0
 \]</span></p>
 <p>It leads to a characteristic equation</p>
 <p><span class="math display">\[
-P(s) = s^2+\frac{K+R}{L}s -K_I
+P(s) = s^2+\frac{K+R}{L}s -\frac{K_I}{L}
 \]</span></p>
 <p>to be identified with the classical second order characteristic equation</p>
 <p><span class="math display">\[
@@ -160,10 +160,10 @@ P(s) = p^2+2\zeta\omega_n s +\omega_n^2
 <p><span class="math display">\[
 \begin{array}{lcl}
 \dot{\omega} &amp;=&amp;  \frac{1}{J}\tau_m-\frac{f}{J}\Omega\\
-    &amp;=&amp;  \frac{K_\phi}{J}i-\frac{f}{J}\omega
+    &amp;=&amp;  \frac{K_\phi}{J}i_q-\frac{f}{J}\omega
 \end{array}
 \]</span></p>
-<p>where <span class="math inline">\(T_m = K_\phi i\)</span></p>
+<p>where <span class="math inline">\(T_m = K_\phi i=\frac{3}{2}p\phi_f\)</span></p>
 <p>The control synthesis is similar than the one proposed for the electrical dynamics with <span class="math inline">\(\dot\varepsilon_\omega = \omega_{\rm ref}-\omega\)</span> leading to</p>
 <p><span class="math display">\[
 \begin{bmatrix}
@@ -176,18 +176,18 @@ P(s) = p^2+2\zeta\omega_n s +\omega_n^2
 \end{bmatrix}+
 \begin{bmatrix}
 \frac{K_\phi}{J}\\0
-\end{bmatrix}i+
+\end{bmatrix}i_q+
 \begin{bmatrix}
 0\\1
 \end{bmatrix}\omega_{\rm ref}
 \]</span></p>
 <p>with the control</p>
 <p><span class="math display">\[
-i  =  -K_\omega \omega-K_{\omega,I}\varepsilon_\omega
+i_q  =  -K_\omega \omega-K_{\omega,I}\varepsilon_\omega
 \]</span></p>
 <p>By analogy, it leads to a characteristic equation</p>
 <p><span class="math display">\[
-P(s) = s^2+\frac{K_\phi K_\omega+f}{L}s -K\phi K_{\omega,I}
+P(s) = s^2+\frac{K_\phi K_\omega+f}{J}s -\frac{K\phi K_{\omega,I}}{J}
 \]</span></p>
 <p>to be identified with the classical second order characteristic equation</p>
 <p><span class="math display">\[
