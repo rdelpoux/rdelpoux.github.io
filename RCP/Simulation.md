@@ -16,3 +16,10 @@ In this simulation file, 3 possible command are proposed.
 
 To download the Simulink model click [here](../Simulink/SAME5xPIM_MCLV2_MotorControl_Simulation.zip).
 
+## Site Map
+
+- [PMSM Description](../MotorModeling/PMSM.html) / [PMSM Modeling](../MotorModeling/PMSMModeling.html) - [PMSM Control](../MotorModeling/PMSMControl.html)
+- [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.html)
+- [Embedded Motor Control](../RCP/PMSMRCP.html) / [Getting Started](../RCP/GettingStarted.html) - [Block configuration for Motor Control](../RCP/BlockconfigurationforMotorControl.html) - [Simulation Simulink models](../RCP/Simulation.html) - [Embedded Simulink models](../RCP/EmbeddedModels.html)
+- [GUI (Graphical User Interface)](../GUI/GUI.html)
+

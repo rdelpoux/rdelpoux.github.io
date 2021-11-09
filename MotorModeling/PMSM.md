@@ -31,5 +31,3 @@ In this page, a classical vector control is proposed for the speed control of th
 - [Embedded Motor Control](../RCP/PMSMRCP.html) / [Getting Started](../RCP/GettingStarted.html) - [Block configuration for Motor Control](../RCP/BlockconfigurationforMotorControl.html) - [Simulation Simulink models](../RCP/Simulation.html) - [Embedded Simulink models](../RCP/EmbeddedModels.html)
 - [GUI (Graphical User Interface)](../GUI/GUI.html)
 
-
-
