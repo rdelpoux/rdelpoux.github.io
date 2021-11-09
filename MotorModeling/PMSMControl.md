@@ -236,7 +236,8 @@ $$
 
 ## Site Map
 
-- [PMSM Description](PMSM.html) / [PMSM Modeling](PMSMModeling.html) - [PMSM Control](PMSMControl.html)
+- [PMSM Description](PMSM.html) | [PMSM Modeling](PMSMModeling.html) - [PMSM Control](PMSMControl.html)
 - [Mplab Device Block For Simulink](../MplabForSimulink/MplabForSimulink.html)
-- [Embedded Motor Control](../RCP/PMSMRCP.html)
--  [GUI (Graphical User Interface)](../GUI/GUI.html)
+- [Embedded Motor Control](../RCP/PMSMRCP.html) | [Getting Started](../RCP/GettingStarted.html) - [Block configuration for Motor Control](../RCP/BlockconfigurationforMotorControl.html) - [Simulation Simulink models](../RCP/Simulation.html) - [Embedded Simulink models](../RCP/EmbeddedModels.html)
+- [GUI (Graphical User Interface)](../GUI/GUI.html)
+
