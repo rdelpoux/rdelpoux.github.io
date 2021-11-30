@@ -6,7 +6,7 @@ The Mplab Solution do not support continuous time. Indeed micro-controllers are 
 
 - The first step is to define the Simulink motel settings as follow : 
 
-<img src="../img/TowardMotorControl/ConfigParam.PNG" width="800">
+<img src="../img/TowardMotorControl/ConfigParam.png" width="800">
 
 The Mplab Solution for Simulink adds to the Simulink Library Browser a library including all the available blocks for the micro-controller. 
 
