@@ -94,9 +94,7 @@ The maximum measurable current is +-4.4 A which provides values within [0 4096] 
 
 And must be configured as follow : 
 
-<img src="../img/TowardMotorControl/ADCMain.PNG" width="250"><img src="../img/TowardMotorControl/ADCSeq0.PNG" width="250"><img src="../img/TowardMotorControl/ADCSeq1.PNG" width="250">
-
-
+<img src="../img/TowardMotorControl/ADCMain.PNG" width="250"><img src="../img/TowardMotorControl/ADCSeq0.PNG" width="250">
 
 
 
